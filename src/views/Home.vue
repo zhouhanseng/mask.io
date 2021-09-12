@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-12 18:42:59
+ * @LastEditTime: 2021-09-12 19:16:52
 -->
 <template>
   <div class="home">
@@ -161,6 +161,53 @@
               </div>
             </div>
           </div>
+          <div class="partnerView">
+            <div class="title">Partner&Supporter</div>
+            <div class="list">
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+            </div>
+            <div class="list">
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+              <div>
+                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+              </div>
+            </div>
+          </div>
+          <div class="submitView">
+            <div>
+              <p class="submitTitle">MASK NETWORK Newsletter</p>
+              <p class="submitSubTitle">Follow us for more information about MASK</p>
+            </div>
+            <div class="submitClickView">
+              <input class="submitInput" type="text" placeholder="Please input your email address" />
+              <md-button class="md-raised md-primary submitButton">submit</md-button>
+            </div>
+          </div>
       </div>
     </div>
     <Footer />
@@ -186,8 +233,8 @@ export default {
 <style scoped>
 .centerView {
 	text-align: center;
-  margin-top: 130px;
-  margin-bottom: 80px;
+	margin-top: 130px;
+	margin-bottom: 80px;
 }
 .mainBox {
 	background: linear-gradient(180deg, #e3f0ff 0%, #ffffff 100%);
@@ -216,7 +263,7 @@ export default {
 	/* align-items: center; */
 	flex-wrap: wrap;
 	margin: 0 240px;
-  margin-top: 40px;
+	margin-top: 40px;
 }
 .iconBox {
 	display: flex;
@@ -232,7 +279,7 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 .iconTitle {
 	text-align: center;
@@ -250,13 +297,13 @@ export default {
 	font-weight: 700;
 }
 .subTitle + .subTitle {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 .centerTitle {
 	color: #0b0034;
 	font-size: 42px;
 	font-weight: 600;
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 .centerSubTitle {
 	color: #777e90;
@@ -271,7 +318,7 @@ export default {
 	flex-wrap: wrap;
 }
 .textImgView.reverse {
-  flex-wrap: wrap-reverse
+	flex-wrap: wrap-reverse;
 }
 .textImgView + .textImgView {
 	margin-top: 80px;
@@ -293,6 +340,74 @@ export default {
 }
 .white {
 	color: white;
+}
+.partnerView {
+	background-color: #f8fbff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 80px 240px;
+	margin-top: 140px;
+}
+.partnerView .title {
+	color: #0b0034;
+	font-size: 42px;
+}
+.partnerView .list {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.partnerView .list > div {
+	margin: 45px 60px;
+}
+.submitView {
+	background: linear-gradient(
+		270.17deg,
+		#e3f0ff 0.01%,
+		#e3efff 99.16%
+	);
+	box-shadow: 0px 50px 16px rgba(10, 1, 40, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px;
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 0;
+  right: 0;
+  bottom: -80px;
+  margin: auto;
+}
+.submitClickView {
+  display: flex;
+  align-items: center;
+}
+.submitTitle {
+	color: #0b0034;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.submitSubTitle {
+	color: #3c4c76;
+	font-size: 18px;
+	font-weight: 400;
+}
+.submitInput {
+	background: #ffffff;
+	box-shadow: 0px 8px 8px rgba(27, 104, 242, 0.1);
+  padding: 24px 0 24px 20px;
+  border: none;
+  width: 450px;
+}
+.submitButton {
+  /* padding: 20px 0; */
+  height: 64px;
+  width: 107px;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
 	.mainBox {
