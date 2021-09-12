@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:27
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-12 15:38:21
+ * @LastEditTime: 2021-09-12 16:09:40
 -->
 <template>
     <div class="content">
@@ -25,7 +25,7 @@
                 <md-icon>menu</md-icon>
             </md-button>
         </div>
-        <md-drawer :md-active.sync="menuVisible" :md-right="true">
+        <md-drawer v-if="!isPc" :md-active.sync="menuVisible" :md-right="true">
             <md-toolbar class="md-transparent" md-elevation="0">Mask</md-toolbar>
             <md-list>
                 <md-list-item>
