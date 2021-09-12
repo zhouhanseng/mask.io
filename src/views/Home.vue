@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-12 19:31:00
+ * @LastEditTime: 2021-09-12 21:57:46
 -->
 <template>
   <div class="home">
@@ -25,20 +25,19 @@
               <p class="subTitle black">The defenders to data autonomy.</p>
             </div>
             <div>
-              <img src="../assets/test.jpg" alt="" srcset="" style="width: 800px;height: 590px">
+              <img class="mainBoxImg" src="../assets/test.jpg" alt="" srcset="">
             </div>
           </div>
           <div class="secView">
             <div class="secBox">
               <div>
-                <p class="mainTitle white">Discover</p>
+                <p class="mainTitle white" style="text-align: left;">Discover</p>
               </div>
-              <div class="white">
+              <div class="secBoxBody white">
                 <p>INTERACT WITH FRIENDS ON SOCIAL MEDIA</p>
                 <p>IN A FREE, DECENTRALIZED,</p>
                 <p>WEB 3.0 WAY</p>
               </div>
-              <div></div>
             </div>
             <div>
               <img src="../assets/test.jpg" alt="" srcset="" style="width: 700px;height: 900px">
@@ -140,8 +139,8 @@
             </div>
           </div>
           <div class="centerView">
-            <p class="centerTitle">Join the Mask Network Community</p>
-            <p class="centerSubTitle">Mask Network is trusted and supported by an active community of users and contributors. Join us!</p>
+            <p class="centerTitle bottomTitle">Join the Mask Network Community</p>
+            <p class="centerSubTitle bottomSubTitle">Mask Network is trusted and supported by an active community of users and contributors. Join us!</p>
           </div>
           <div class="iconList">
             <div class="iconBox">
@@ -179,8 +178,8 @@
               <div>
                   <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
               </div>
-            </div>
-            <div class="list">
+            <!-- </div>
+            <div class="list"> -->
               <div>
                   <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
               </div>
@@ -253,6 +252,10 @@ export default {
 	justify-content: center;
 	padding: 120px 0;
 }
+.mainBoxImg {
+	width: 800px;
+	height: 590px;
+}
 .secView {
 	display: flex;
 	flex-wrap: wrap;
@@ -264,7 +267,9 @@ export default {
 	width: 740px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+}
+.secBoxBody {
+  margin-top: 200px;
 }
 .iconList {
 	display: flex;
@@ -356,7 +361,7 @@ export default {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding: 80px 240px;
+	padding: 80px 330px;
 	margin-top: 140px;
 }
 .partnerView .title {
@@ -380,6 +385,7 @@ export default {
 	);
 	box-shadow: 0px 50px 16px rgba(10, 1, 40, 0.1);
 	display: flex;
+  flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	padding: 40px;
@@ -428,6 +434,11 @@ export default {
 	.mainBox {
 		padding: 40px 0;
 	}
+	.mainBoxImg {
+		width: 483px;
+		height: 360px;
+    margin-top: 50px;
+	}
 	.mainTitle {
 		font-size: 40px;
 		text-align: center;
@@ -435,8 +446,25 @@ export default {
 	.subTitle {
 		text-align: center;
 	}
+  .secView {
+    margin: 0 34px;
+  }
+  .textWidth {
+    margin-top: 60px;
+  }
+  .secBox {
+    margin-bottom: 20px;
+  }
+  .bottomTitle {
+    margin: 30px 100px;
+    line-height: 60px;
+  }
+  .bottomSubTitle {
+    margin: 30px 100px;
+    line-height: 40px;
+  }
 	.iconBox {
-		margin: 50px;
+		margin: 40px;
 	}
 	.iconTitle {
 		font-size: 14px;
@@ -444,6 +472,21 @@ export default {
 	.iconList {
 		margin: 0 100px;
 	}
+  .partnerView {
+    padding: 80px 0px;
+  }
+  .partnerView .title  {
+    margin-bottom: 60px;
+  }
+  .partnerView .list > div {
+    margin: 15px 0;
+  }
+  .submitView {
+    width: calc(100% - 130px);
+  }
+  .submitClickView {
+    margin-top: 45px;
+  }
 }
 
 @media screen and (max-width: 375px) {
