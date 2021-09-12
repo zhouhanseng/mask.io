@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-12 19:16:52
+ * @LastEditTime: 2021-09-12 19:31:00
 -->
 <template>
   <div class="home">
@@ -198,6 +198,10 @@
               </div>
             </div>
           </div>
+          <md-snackbar :md-position="center" :md-duration="Infinity" :md-active.sync="showSnackbar" md-persistent>
+            <p>We use cookies to enhance your experience, analyze our traffic, and for security and marketing. By visiting our website you agree to our use of cookies.<sapn style="color: #0F5DE9;">*Read more about cookies*</sapn></p>
+            <md-button class="md-raised md-primary cookieSubmitButton" @click="showSnackbar = false">I Accept</md-button>
+          </md-snackbar>
           <div class="submitView">
             <div>
               <p class="submitTitle">MASK NETWORK Newsletter</p>
@@ -225,6 +229,11 @@ export default {
 	components: {
 		Menu,
 		Footer,
+	},
+	data: () => {
+		return {
+			showSnackbar: true,
+		};
 	},
 	mounted() {},
 	methods: {},
@@ -374,16 +383,22 @@ export default {
 	align-items: center;
 	justify-content: space-between;
 	padding: 40px;
-  position: absolute;
-  width: calc(100% - 300px);
-  left: 0;
-  right: 0;
-  bottom: -80px;
-  margin: auto;
+	position: absolute;
+	width: calc(100% - 300px);
+	left: 0;
+	right: 0;
+	bottom: -80px;
+	margin: auto;
+}
+.cookieSubmitButton {
+	border-radius: 8px;
+	height: 55px;
+	width: 105px;
+	font-size: 14px;
 }
 .submitClickView {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 .submitTitle {
 	color: #0b0034;
@@ -399,15 +414,15 @@ export default {
 .submitInput {
 	background: #ffffff;
 	box-shadow: 0px 8px 8px rgba(27, 104, 242, 0.1);
-  padding: 24px 0 24px 20px;
-  border: none;
-  width: 450px;
+	padding: 24px 0 24px 20px;
+	border: none;
+	width: 450px;
 }
 .submitButton {
-  /* padding: 20px 0; */
-  height: 64px;
-  width: 107px;
-  margin: 0;
+	/* padding: 20px 0; */
+	height: 64px;
+	width: 107px;
+	margin: 0;
 }
 @media screen and (max-width: 768px) {
 	.mainBox {
