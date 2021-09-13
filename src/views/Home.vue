@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-12 21:57:46
+ * @LastEditTime: 2021-09-13 16:14:08
 -->
 <template>
   <div class="home">
@@ -14,8 +14,13 @@
     <Menu />
     <!-- 这里应有一吨 Flex 布局 -->
     <div>
-      <div>
-        <img src="../assets/index_head.jpeg" alt="" srcset="">
+      <!-- <div class="headImgView"> -->
+        <!-- <nav class="headImg" :style="{'background-size': `${imgWidth}%`}"> -->
+          <!-- <img src="../assets/index_head.jpeg" :style="{'transform':`scale(${imgSize})`}" alt=""> -->
+        <!-- </nav> -->
+      <!-- </div> -->
+      <div :style="{height: `${headImageViewHeight}px`}" class="bgImgView">
+        <img ref="bgImg" src="../assets/index_head.jpeg" :style="{transform:`scale(${imgSize})`}" alt="">
       </div>
       <div>
           <div class="mainBox">
@@ -223,6 +228,7 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
+// let lastScroll = 0;
 export default {
 	name: "Home",
 	components: {
@@ -232,10 +238,42 @@ export default {
 	data: () => {
 		return {
 			showSnackbar: true,
+			headImageViewHeight: 812,
+			imgSize: 4.25, // 3.8,
+			imgWidth: 500,
 		};
 	},
-	mounted() {},
-	methods: {},
+	mounted() {
+		window.addEventListener("scroll", this.getScroll);
+	},
+	destroyed() {
+		window.removeEventListener("scroll", this.getScroll);
+	},
+	methods: {
+		getScroll() {
+			const scroll = document.documentElement.scrollTop;
+			const ratio = 598 / scroll;
+			// let isdown = scroll > lastScroll;
+			// lastScroll = scroll;
+			// console.log("this.imgWidth", this.imgWidth);
+			// if (isdown) {
+			// 	if (this.imgWidth <= 100) {
+			// 		this.imgWidth = 100;
+			// 		return;
+			// 	}
+			// 	this.imgWidth = this.imgWidth - 10;
+			// } else {
+			// 	if (this.imgWidth >= 500) {
+			// 		this.imgWidth = 500;
+			// 		return;
+			// 	}
+			// 	this.imgWidth = this.imgWidth + 10;
+			// }
+
+			this.imgSize = ratio <= 1 ? 1 : ratio > 4.25 ? 4.25 : ratio;
+			this.headImageViewHeight = this.$refs.bgImg.getBoundingClientRect().height;
+		},
+	},
 };
 </script>
 <style scoped>
@@ -269,7 +307,7 @@ export default {
 	flex-direction: column;
 }
 .secBoxBody {
-  margin-top: 200px;
+	margin-top: 200px;
 }
 .iconList {
 	display: flex;
@@ -385,7 +423,7 @@ export default {
 	);
 	box-shadow: 0px 50px 16px rgba(10, 1, 40, 0.1);
 	display: flex;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	padding: 40px;
@@ -431,13 +469,18 @@ export default {
 	margin: 0;
 }
 @media screen and (max-width: 768px) {
+	.bgImgView {
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+	}
 	.mainBox {
 		padding: 40px 0;
 	}
 	.mainBoxImg {
 		width: 483px;
 		height: 360px;
-    margin-top: 50px;
+		margin-top: 50px;
 	}
 	.mainTitle {
 		font-size: 40px;
@@ -446,23 +489,23 @@ export default {
 	.subTitle {
 		text-align: center;
 	}
-  .secView {
-    margin: 0 34px;
-  }
-  .textWidth {
-    margin-top: 60px;
-  }
-  .secBox {
-    margin-bottom: 20px;
-  }
-  .bottomTitle {
-    margin: 30px 100px;
-    line-height: 60px;
-  }
-  .bottomSubTitle {
-    margin: 30px 100px;
-    line-height: 40px;
-  }
+	.secView {
+		margin: 0 34px;
+	}
+	.textWidth {
+		margin-top: 60px;
+	}
+	.secBox {
+		margin-bottom: 20px;
+	}
+	.bottomTitle {
+		margin: 30px 100px;
+		line-height: 60px;
+	}
+	.bottomSubTitle {
+		margin: 30px 100px;
+		line-height: 40px;
+	}
 	.iconBox {
 		margin: 40px;
 	}
@@ -472,24 +515,35 @@ export default {
 	.iconList {
 		margin: 0 100px;
 	}
-  .partnerView {
-    padding: 80px 0px;
-  }
-  .partnerView .title  {
-    margin-bottom: 60px;
-  }
-  .partnerView .list > div {
-    margin: 15px 0;
-  }
-  .submitView {
-    width: calc(100% - 130px);
-  }
-  .submitClickView {
-    margin-top: 45px;
-  }
+	.partnerView {
+		padding: 80px 0px;
+	}
+	.partnerView .title {
+		margin-bottom: 60px;
+	}
+	.partnerView .list > div {
+		margin: 15px 0;
+	}
+	.submitView {
+		width: calc(100% - 130px);
+	}
+	.submitClickView {
+		margin-top: 45px;
+	}
 }
 
 @media screen and (max-width: 375px) {
+	.headImgView {
+		height: 812px;
+	}
+	.headImgView .headImg {
+		background-image: url("../assets/index_head.jpeg");
+		width: 100%;
+		height: 812px;
+		background-position: center;
+		background-size: 500%;
+		background-repeat: no-repeat;
+	}
 	.mainBox {
 		padding: 40px 0;
 	}
