@@ -14,11 +14,6 @@
     <Menu />
     <!-- 这里应有一吨 Flex 布局 -->
     <div>
-      <!-- <div class="headImgView"> -->
-        <!-- <nav class="headImg" :style="{'background-size': `${imgWidth}%`}"> -->
-          <!-- <img src="../assets/index_head.jpeg" :style="{'transform':`scale(${imgSize})`}" alt=""> -->
-        <!-- </nav> -->
-      <!-- </div> -->
       <div v-if="isPc">
         <img src="../assets/index_head.jpeg" alt="">
       </div>
