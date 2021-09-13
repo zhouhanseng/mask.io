@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-13 16:36:06
+ * @LastEditTime: 2021-09-13 16:42:02
 -->
 <template>
   <div class="home">
@@ -200,7 +200,7 @@
               </div>
             </div>
           </div>
-          <md-snackbar :md-position="center" :md-duration="Infinity" :md-active.sync="showSnackbar" md-persistent>
+          <md-snackbar :md-position="'center'" :md-duration="Infinity" :md-active.sync="showSnackbar" md-persistent>
             <p>We use cookies to enhance your experience, analyze our traffic, and for security and marketing. By visiting our website you agree to our use of cookies.<sapn style="color: #0F5DE9;">*Read more about cookies*</sapn></p>
             <md-button class="md-raised md-primary cookieSubmitButton" @click="showSnackbar = false">I Accept</md-button>
           </md-snackbar>
