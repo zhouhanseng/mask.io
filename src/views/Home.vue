@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-13 16:33:21
+ * @LastEditTime: 2021-09-13 16:36:06
 -->
 <template>
   <div class="home">
@@ -19,7 +19,10 @@
           <!-- <img src="../assets/index_head.jpeg" :style="{'transform':`scale(${imgSize})`}" alt=""> -->
         <!-- </nav> -->
       <!-- </div> -->
-      <div :style="{height: `${headImageViewHeight}px`}" class="bgImgView">
+      <div v-if="isPc">
+        <img src="../assets/index_head.jpeg" alt="">
+      </div>
+      <div v-else :style="{height: `${headImageViewHeight}px`}" class="bgImgView">
         <img ref="bgImg" src="../assets/index_head.jpeg" :style="{transform:`scale(${imgSize})`}" alt="">
       </div>
       <div>
@@ -241,16 +244,27 @@ export default {
 			headImageViewHeight: 812,
 			imgSize: 4.25, // 3.8,
 			imgWidth: 500,
+			isPc: true,
 		};
 	},
 	mounted() {
 		window.addEventListener("scroll", this.getScroll);
+		this.isPc = !this._isMobile();
 	},
 	destroyed() {
 		window.removeEventListener("scroll", this.getScroll);
 	},
 	methods: {
+		_isMobile() {
+			let flag = navigator.userAgent.match(
+				/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+			);
+			return flag;
+		},
 		getScroll() {
+			if (this.isPc) {
+				return;
+			}
 			const scroll = document.documentElement.scrollTop;
 			const ratio = 598 / scroll;
 			// let isdown = scroll > lastScroll;
@@ -554,52 +568,52 @@ export default {
 	.secView {
 		margin: 0 12px;
 	}
-  .secBox {
-    margin-bottom: 0px;
-  }
-  .centerTitle {
-    font-size: 32px;
-  }
-  .centerSubTitle {
-    font-size: 16px;
-  }
-  .textImgView {
-    margin: 0 12px;
-  }
-  .textTitle {
-    font-size: 32px;
-  }
-  .textSubTitle {
-    margin-top: 50px;
-    font-size: 16px;
-  }
-  .textImgView + .textImgView {
-    margin-top: 60px;
-  }
-  .bottomTitle {
-    font-size: 24px;
-    margin: 30px 50px;
-  }
-  .bottomSubTitle {
-    font-size: 16px;
-    margin: 30px 30px;
-  }
-  .submitTitle {
-    font-size: 20px;
-  }
-  .submitSubTitle {
-    font-size: 16px;
-  }
-  .submitInput {
-    width: 204px;
-    padding: 19px 21px;
-  }
-  .submitButton {
-    height: 53px;
-  }
-  .submitView {
-    width: calc(100%)
-  }
+	.secBox {
+		margin-bottom: 0px;
+	}
+	.centerTitle {
+		font-size: 32px;
+	}
+	.centerSubTitle {
+		font-size: 16px;
+	}
+	.textImgView {
+		margin: 0 12px;
+	}
+	.textTitle {
+		font-size: 32px;
+	}
+	.textSubTitle {
+		margin-top: 50px;
+		font-size: 16px;
+	}
+	.textImgView + .textImgView {
+		margin-top: 60px;
+	}
+	.bottomTitle {
+		font-size: 24px;
+		margin: 30px 50px;
+	}
+	.bottomSubTitle {
+		font-size: 16px;
+		margin: 30px 30px;
+	}
+	.submitTitle {
+		font-size: 20px;
+	}
+	.submitSubTitle {
+		font-size: 16px;
+	}
+	.submitInput {
+		width: 204px;
+		padding: 19px 21px;
+	}
+	.submitButton {
+		height: 53px;
+	}
+	.submitView {
+		width: calc(100%);
+	}
 	.subTitle {
 		text-align: center;
 	}
