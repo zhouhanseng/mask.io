@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-13 16:14:08
+ * @LastEditTime: 2021-09-13 16:33:21
 -->
 <template>
   <div class="home">
@@ -551,6 +551,55 @@ export default {
 		font-size: 40px;
 		text-align: center;
 	}
+	.secView {
+		margin: 0 12px;
+	}
+  .secBox {
+    margin-bottom: 0px;
+  }
+  .centerTitle {
+    font-size: 32px;
+  }
+  .centerSubTitle {
+    font-size: 16px;
+  }
+  .textImgView {
+    margin: 0 12px;
+  }
+  .textTitle {
+    font-size: 32px;
+  }
+  .textSubTitle {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  .textImgView + .textImgView {
+    margin-top: 60px;
+  }
+  .bottomTitle {
+    font-size: 24px;
+    margin: 30px 50px;
+  }
+  .bottomSubTitle {
+    font-size: 16px;
+    margin: 30px 30px;
+  }
+  .submitTitle {
+    font-size: 20px;
+  }
+  .submitSubTitle {
+    font-size: 16px;
+  }
+  .submitInput {
+    width: 204px;
+    padding: 19px 21px;
+  }
+  .submitButton {
+    height: 53px;
+  }
+  .submitView {
+    width: calc(100%)
+  }
 	.subTitle {
 		text-align: center;
 	}
