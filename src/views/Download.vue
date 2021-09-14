@@ -132,6 +132,14 @@ export default {
   transition: all 0.2s linear;
   background: #ffffffcf;
 }
+.btn-white:hover {
+  border-radius: 8px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: white;
+}
 
 .apk-button:hover > span,
 .store-button:hover > span {
