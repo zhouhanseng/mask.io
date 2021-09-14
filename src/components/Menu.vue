@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:27
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 15:59:07
+ * @LastEditTime: 2021-09-14 16:02:25
 -->
 <template>
     <div class="menuContent" :style="{background: transparent?'transparent':'white'}">
@@ -89,6 +89,7 @@ export default {
 	display: flex;
 	align-items: center;
     position: relative;
+    z-index: 2;
 }
 .useMask {
 	padding: 11px 20px;
