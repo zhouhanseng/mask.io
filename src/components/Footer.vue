@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:45
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 13:37:02
+ * @LastEditTime: 2021-09-14 15:14:47
 -->
 <template>
     <div class="content">
@@ -46,11 +46,11 @@
                 <div class="Community">
                     <div class="title">Community</div>
                     <div class="commun">
-                        <div><img src="../assets/Negative-1.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
-                        <div><img src="../assets/Negative-2.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
-                        <div><img src="../assets/Negative-3.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
-                        <div><img src="../assets/Negative-4.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
-                        <div><img src="../assets/Negative-5.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+                        <div class="navBox"><img src="../assets/nav-1.png" style="width: 12px;"></div>
+                        <div class="navBox"><img src="../assets/nav-2.png" style="width: 21px;"></div>
+                        <div class="navBox"><img src="../assets/nav-3.png" style="width: 21px;"></div>
+                        <div class="navBox"><img src="../assets/nav-4.png" style="width: 19px;"></div>
+                        <div class="navBox"><img src="../assets/nav-5.png" style="width: 18px;"></div>
                     </div>
                 </div>
 
@@ -200,6 +200,24 @@ export default {
 	margin-top: 20px;
 }
 
+.navBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	background-color: #1c2c4e;
+	border-radius: 50%;
+}
+
+.navBox:hover {
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
 @media screen and (max-width: 768px) {
 	.body {
 		flex-wrap: wrap;
@@ -241,10 +259,10 @@ export default {
 }
 
 @media screen and (max-width: 375px) {
-    .body {
-        padding-bottom: 40px;
-        padding-top: 30px;
-    }
+	.body {
+		padding-bottom: 40px;
+		padding-top: 30px;
+	}
 	.leftBox {
 		margin: 24px;
 	}
@@ -278,11 +296,11 @@ export default {
 	.submitButton {
 		height: 53px;
 	}
-    .footerSubtext {
-        margin: 0 24px;
-        font-size: 14px;
-        font-weight: 700;
-        text-align: start;
-    }
+	.footerSubtext {
+		margin: 0 24px;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: start;
+	}
 }
 </style>
