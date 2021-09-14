@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:45
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 12:26:15
+ * @LastEditTime: 2021-09-14 13:14:40
 -->
 <template>
     <div class="content">
@@ -45,12 +45,12 @@
                 </div>
                 <div>
                     <div class="title">Community</div>
-                    <div>
-                        <div>icon</div>
-                        <div>icon</div>
-                        <div>icon</div>
-                        <div>icon</div>
-                        <div>icon</div>
+                    <div class="commun">
+                        <div><img src="../assets/Negative-1.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+                        <div><img src="../assets/Negative-2.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+                        <div><img src="../assets/Negative-3.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+                        <div><img src="../assets/Negative-4.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+                        <div><img src="../assets/Negative-5.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
                     </div>
                 </div>
 
@@ -188,6 +188,16 @@ export default {
 }
 .logoView {
 	margin-bottom: 70px;
+}
+.commun {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    margin-top: -30px;
+}
+.commun > div {
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
