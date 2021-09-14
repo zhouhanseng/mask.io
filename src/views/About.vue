@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:50:19
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 14:00:25
+ * @LastEditTime: 2021-09-14 14:05:45
 -->
 <template>
   <div class="about">
@@ -97,7 +97,7 @@ export default {
 		align-items: center;
 		justify-content: center;
 		padding: 50px 15px;
-    padding-bottom: 150px
+		padding-bottom: 150px;
 	}
 
 	.about_text {
