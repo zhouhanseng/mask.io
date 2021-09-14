@@ -30,6 +30,11 @@ const routes = [
 		path: "/download",
 		name: "Download",
 		component: () => import("../views/Download")
+	},
+	{
+		path: "/tutorial",
+		name: "Tutorial",
+		component: () => import("../views/Tutorial")
 	}
 ];
 
