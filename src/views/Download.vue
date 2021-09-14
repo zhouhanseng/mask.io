@@ -10,7 +10,7 @@
       <img class="header" src="../assets/download_header.png" />
     </div>
     <div class="store-content">
-      <div class="store-item">
+      <div class="store-item store-space">
         <h1>Chrome / Edge</h1>
         <span>Status: stable</span>
         <img src="../assets/icon_chrome.png"/>
@@ -18,7 +18,7 @@
           <span>Chrome Web Store</span>
         </div>
       </div>
-      <div class="store-item">
+      <div class="store-item store-space">
         <h1>FireFox</h1>
         <span>Status: stable</span>
         <img src="../assets/icon_firefox.png"/>
@@ -104,6 +104,10 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.store-space {
+
 }
 
 .store-button {
@@ -202,6 +206,40 @@ export default {
 
 .apk-button > span {
   color: white;
+}
+
+@media screen and (max-width: 375px) {
+  .store-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .store-space {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+
+  .app-content {
+    width: 100%;
+    height: 100%;
+    background: #1C68F3;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 220px;
+  }
+
+  .text-box {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 120px;
+  }
+
+  .btn-white {
+    width: 140px;
+    margin-bottom: 220px;
+  }
 }
 
 </style>
