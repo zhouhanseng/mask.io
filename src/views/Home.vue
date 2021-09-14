@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-13 16:42:02
+ * @LastEditTime: 2021-09-14 11:25:11
 -->
 <template>
   <div class="home">
@@ -15,10 +15,10 @@
     <!-- 这里应有一吨 Flex 布局 -->
     <div>
       <div v-if="isPc">
-        <img src="../assets/index_head.jpeg" alt="">
+        <img src="../assets/index_head.png" alt="" style="width: 100%;">
       </div>
       <div v-else :style="{height: `${headImageViewHeight}px`}" class="bgImgView">
-        <img ref="bgImg" src="../assets/index_head.jpeg" :style="{transform:`scale(${imgSize})`}" alt="">
+        <img ref="bgImg" src="../assets/index_head.png" :style="{transform:`scale(${imgSize})`}" alt="">
       </div>
       <div>
           <div class="mainBox">
@@ -28,7 +28,7 @@
               <p class="subTitle black">The defenders to data autonomy.</p>
             </div>
             <div>
-              <img class="mainBoxImg" src="../assets/test.jpg" alt="" srcset="">
+              <img class="mainBoxImg" src="../assets/img_1.png" alt="" srcset="">
             </div>
           </div>
           <div class="secView">
@@ -43,30 +43,30 @@
               </div>
             </div>
             <div>
-              <img src="../assets/test.jpg" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/discover.png" alt="" srcset="" style="width: 700px;height: 900px">
             </div>
           </div>
           <div class="iconList">
             <div class="iconBox">
-              <div class="iconBoxIcon">icon</div>
+              <div class="iconBoxIcon"><img src="../assets/Menu.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>Send encrypted messages</p>
                 <p>to designated receivers</p>
               </div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon">icon</div>
+              <div class="iconBoxIcon"><img src="../assets/Shield.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">Protect your privacy</div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon">icon</div>
+              <div class="iconBoxIcon"><img src="../assets/Document.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>Defend your data</p>
                 <p>autonomy</p>
               </div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon">icon</div>
+              <div class="iconBoxIcon"><img src="../assets/Wallet.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>Discover ownership</p>
                 <p>economy</p>
@@ -84,12 +84,12 @@
               <p class="textSubTitle">Launch decentralized asset freely and participate in token launch directly  on Twitter</p>
             </div>
             <div>
-              <img src="../assets/test.jpg" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/ito.png" alt="" srcset="" style="width: 700px;height: 900px">
             </div>
           </div>
           <div class="textImgView">
             <div>
-              <img src="../assets/test.jpg" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/redpack.png" alt="" srcset="" style="width: 700px;height: 900px">
             </div>
             <div class="textWidth">
               <p class="textTitle">Red Packet</p>
@@ -102,12 +102,12 @@
               <p class="textSubTitle">Decentralized file storage, permanently.Upload and share files to your Mask friends on top of Arweave Network</p>
             </div>
             <div>
-              <img src="../assets/test.jpg" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/fileservice.png" alt="" srcset="" style="width: 700px;height: 900px">
             </div>
           </div>
           <div class="textImgView">
             <div>
-              <img src="../assets/test.jpg" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/transak.png" alt="" srcset="" style="width: 700px;height: 900px">
             </div>
             <div class="textWidth">
               <p class="textTitle">Transak</p>
@@ -120,12 +120,12 @@
               <p class="textSubTitle">Display token information, price charts and exchange information directly on social media. </p>
             </div>
             <div>
-              <img src="../assets/test.jpg" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/markets.png" alt="" srcset="" style="width: 700px;height: 900px">
             </div>
           </div>
           <div class="textImgView">
             <div>
-              <img src="../assets/test.jpg" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/nft.png" alt="" srcset="" style="width: 700px;height: 900px">
             </div>
             <div class="textWidth">
               <p class="textTitle">NFT</p>
@@ -138,7 +138,7 @@
               <p class="textSubTitle">Purchase tokens through DEX without additional fees and restrictions.</p>
             </div>
             <div>
-              <img src="../assets/test.jpg" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/swap.png" alt="" srcset="" style="width: 700px;height: 900px">
             </div>
           </div>
           <div class="centerView">
@@ -147,17 +147,17 @@
           </div>
           <div class="iconList">
             <div class="iconBox">
-              <div class="iconBoxIcon">icon</div>
+              <div class="iconBoxIcon"><img src="../assets/github.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>GitHub</p>
               </div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon">icon</div>
+              <div class="iconBoxIcon"><img src="../assets/Tick.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">MaskDao</div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon">icon</div>
+              <div class="iconBoxIcon"><img src="../assets/Menu.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>Mask Snapshot</p>
               </div>
@@ -167,36 +167,36 @@
             <div class="title">Partner&Supporter</div>
             <div class="list">
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p1.png" alt="" srcset="" style="width: 165px;height: 33px;">
               </div>
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p2.png" alt="" srcset="" style="width: 142px;height: 54px;">
               </div>
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p3.png" alt="" srcset="" style="width: 136px;height: 48px;">
               </div>
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p4.png" alt="" srcset="" style="width: 156px;height: 46px;">
               </div>
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p5.png" alt="" srcset="" style="width: 199px;height: 28px;">
               </div>
             <!-- </div>
             <div class="list"> -->
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p6.png" alt="" srcset="" style="">
               </div>
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p7.png" alt="" srcset="" style="width: 96px;height: 56px;">
               </div>
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p8.png" alt="" srcset="" style="width: 199px;height: 35x;">
               </div>
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p9.png" alt="" srcset="" style="width: 162px;height: 44px;">
               </div>
               <div>
-                  <img src="../assets/test.jpg" alt="" srcset="" style="width: 200px;height: 80px">
+                  <img class="partImg" src="../assets/p10.png" alt="" srcset="" style="width: 94px;height: 65px;">
               </div>
             </div>
           </div>
@@ -414,6 +414,8 @@ export default {
 .partnerView .title {
 	color: #0b0034;
 	font-size: 42px;
+	font-weight: 600;
+	margin-bottom: 80px;
 }
 .partnerView .list {
 	display: flex;
@@ -423,7 +425,18 @@ export default {
 }
 .partnerView .list > div {
 	margin: 45px 60px;
+	width: 200px;
+	height: 80px;
+	text-align: center;
 }
+.partImg {
+	filter: grayscale(100%);
+	-webkit-transition : -webkit-filter 200ms linear;
+}
+.partImg:hover {
+	filter: none;
+}
+
 .submitView {
 	background: linear-gradient(
 		270.17deg,
@@ -546,7 +559,7 @@ export default {
 		height: 812px;
 	}
 	.headImgView .headImg {
-		background-image: url("../assets/index_head.jpeg");
+		background-image: url("../assets/index_head.png");
 		width: 100%;
 		height: 812px;
 		background-position: center;
