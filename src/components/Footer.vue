@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:45
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 13:26:37
+ * @LastEditTime: 2021-09-14 13:37:02
 -->
 <template>
     <div class="content">
@@ -24,7 +24,7 @@
                         <div>Privacy Policy</div>
                     </div>
                 </div>
-                <div>
+                <div class="bottomNavi">
                     <div class="title">Navigate</div>
                     <div class="naviBox">
                         <div class="list">
@@ -218,20 +218,20 @@ export default {
 	.rightBox {
 		flex-wrap: wrap;
 		justify-content: flex-start;
-        padding: 0 40px;
+		padding: 0 40px;
 	}
 	.rightBox > div + div {
 		margin-left: 0;
 	}
-    .Community {
-        margin-top: 88px;
-    }
-    .commun {
-        width: auto;
-    }
-    .footerSubtext {
-        padding: 30px 0 70px 0;
-    }
+	.Community {
+		margin-top: 88px;
+	}
+	.commun {
+		width: auto;
+	}
+	.footerSubtext {
+		padding: 30px 0 70px 0;
+	}
 	.submitView {
 		width: calc(100% - 130px);
 	}
@@ -241,6 +241,27 @@ export default {
 }
 
 @media screen and (max-width: 375px) {
+    .body {
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+	.leftBox {
+		margin: 24px;
+	}
+	.rightBox {
+		margin: 24px;
+		padding: 0;
+	}
+	.bottomNavi {
+		margin-top: 40px;
+	}
+	.naviBox > div + div {
+		margin-left: 40px;
+	}
+	.commun > div {
+		margin-left: 10px;
+		margin-top: 20px;
+	}
 	.submitView {
 		width: calc(100%);
 	}
@@ -257,5 +278,11 @@ export default {
 	.submitButton {
 		height: 53px;
 	}
+    .footerSubtext {
+        margin: 0 24px;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: start;
+    }
 }
 </style>
