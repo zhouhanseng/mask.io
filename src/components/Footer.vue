@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:45
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 13:14:40
+ * @LastEditTime: 2021-09-14 13:26:37
 -->
 <template>
     <div class="content">
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="Community">
                     <div class="title">Community</div>
                     <div class="commun">
                         <div><img src="../assets/Negative-1.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
@@ -84,7 +84,7 @@ export default {
 	position: relative;
 }
 .white {
-    color: white;
+	color: white;
 }
 .body {
 	padding-top: 130px;
@@ -118,7 +118,7 @@ export default {
 	display: flex;
 }
 .naviBox > div + div {
-    margin-left: 100px;
+	margin-left: 100px;
 }
 .title {
 	color: white;
@@ -190,17 +190,48 @@ export default {
 	margin-bottom: 70px;
 }
 .commun {
-    display: flex;
-    flex-wrap: wrap;
-    width: 220px;
-    margin-top: -30px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 220px;
+	margin-top: -30px;
 }
 .commun > div {
-    margin-left: 20px;
-    margin-top: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
+	.body {
+		flex-wrap: wrap;
+	}
+	.leftBox {
+		padding: 0;
+		margin: 0;
+		border-right: none;
+		padding-bottom: 88px;
+		margin-bottom: 78px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+	.subtitle {
+		width: auto;
+	}
+	.rightBox {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+        padding: 0 40px;
+	}
+	.rightBox > div + div {
+		margin-left: 0;
+	}
+    .Community {
+        margin-top: 88px;
+    }
+    .commun {
+        width: auto;
+    }
+    .footerSubtext {
+        padding: 30px 0 70px 0;
+    }
 	.submitView {
 		width: calc(100% - 130px);
 	}
