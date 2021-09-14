@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:50:19
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 14:05:45
+ * @LastEditTime: 2021-09-14 14:08:01
 -->
 <template>
   <div class="about">

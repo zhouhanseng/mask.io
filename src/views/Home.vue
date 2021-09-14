@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 13:41:08
+ * @LastEditTime: 2021-09-14 14:08:58
 -->
 <template>
   <div class="home">
@@ -240,12 +240,6 @@ export default {
 		window.removeEventListener("scroll", this.getScroll);
 	},
 	methods: {
-		_isMobile() {
-			let flag = navigator.userAgent.match(
-				/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
-			);
-			return flag;
-		},
 		getScroll() {
 			if (this.isPc) {
 				return;
