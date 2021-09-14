@@ -12,7 +12,7 @@
       <div class="text-box">
         <span>todo。。。。。。。</span>
       </div>
-      <img src="../assets/tutorial_1.png"/><div class="content" />
+      <img src="../assets/tutorial_1.webp"/><div class="content" />
 
       <div class="text-box">
         <span class="font-subtitle">2.Type in the message you would like to encrypt, then click "Finish" in the bottom right cornor.</span>
@@ -20,7 +20,7 @@
       <div class="text-box">
         <span>todo。。。。。。。</span>
       </div>
-      <img src="../assets/tutorial_2.png"/><div class="content" />
+      <img src="../assets/tutorial_2.webp"/><div class="content" />
 
     </div>
 

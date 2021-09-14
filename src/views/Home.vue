@@ -1,6 +1,6 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
@@ -15,10 +15,10 @@
     <!-- 这里应有一吨 Flex 布局 -->
     <div>
       <div v-if="isPc">
-        <img src="../assets/index_head.png" alt="" style="width: 100%;margin-top: -81px;z-index:-1;">
+        <img src="../assets/index_head.webp" alt="" style="width: 100%;margin-top: -81px;z-index:-1;">
       </div>
       <div v-else :style="{height: `${headImageViewHeight}px`}" class="bgImgView" style="margin-top: -81px;z-index:-1;">
-        <img ref="bgImg" src="../assets/index_head.png" :style="{transform:`scale(${imgSize})`}" alt="">
+        <img ref="bgImg" src="../assets/index_head.webp" :style="{transform:`scale(${imgSize})`}" alt="">
       </div>
       <div>
           <div class="mainBox">
@@ -28,7 +28,7 @@
               <p class="subTitle black">The defenders to data autonomy.</p>
             </div>
             <div>
-              <img class="mainBoxImg" src="../assets/img_1.png" alt="" srcset="">
+              <img class="mainBoxImg" src="../assets/img_1.webp" alt="" srcset="">
             </div>
           </div>
           <div class="secView">
@@ -43,30 +43,30 @@
               </div>
             </div>
             <div>
-              <img src="../assets/discover.png" alt="" srcset="" class="mainImg">
+              <img src="../assets/discover.webp" alt="" srcset="" class="mainImg">
             </div>
           </div>
           <div class="iconList">
             <div class="iconBox">
-              <div class="iconBoxIcon"><img src="../assets/Menu.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+              <div class="iconBoxIcon"><img src="../assets/Menu.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>Send encrypted messages</p>
                 <p>to designated receivers</p>
               </div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon"><img src="../assets/Shield.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+              <div class="iconBoxIcon"><img src="../assets/Shield.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">Protect your privacy</div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon"><img src="../assets/Document.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+              <div class="iconBoxIcon"><img src="../assets/Document.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>Defend your data</p>
                 <p>autonomy</p>
               </div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon"><img src="../assets/Wallet.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+              <div class="iconBoxIcon"><img src="../assets/Wallet.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>Discover ownership</p>
                 <p>economy</p>
@@ -84,12 +84,12 @@
               <p class="textSubTitle">Launch decentralized asset freely and participate in token launch directly  on Twitter</p>
             </div>
             <div>
-              <img class="mainImg" src="../assets/ito.png" alt="" srcset="">
+              <img class="mainImg" src="../assets/ito.webp" alt="" srcset="">
             </div>
           </div>
           <div class="textImgView">
             <div>
-              <img src="../assets/redpack.png" alt="" srcset="" class="mainImg">
+              <img src="../assets/redpack.webp" alt="" srcset="" class="mainImg">
             </div>
             <div class="textWidth">
               <p class="textTitle">Red Packet</p>
@@ -102,12 +102,12 @@
               <p class="textSubTitle">Decentralized file storage, permanently.Upload and share files to your Mask friends on top of Arweave Network</p>
             </div>
             <div>
-              <img src="../assets/fileservice.png" alt="" srcset="" class="mainImg">
+              <img src="../assets/fileservice.webp" alt="" srcset="" class="mainImg">
             </div>
           </div>
           <div class="textImgView">
             <div>
-              <img src="../assets/transak.png" alt="" srcset="" class="mainImg">
+              <img src="../assets/transak.webp" alt="" srcset="" class="mainImg">
             </div>
             <div class="textWidth">
               <p class="textTitle">Transak</p>
@@ -120,12 +120,12 @@
               <p class="textSubTitle">Display token information, price charts and exchange information directly on social media. </p>
             </div>
             <div>
-              <img src="../assets/markets.png" alt="" srcset="" class="mainImg">
+              <img src="../assets/markets.webp" alt="" srcset="" class="mainImg">
             </div>
           </div>
           <div class="textImgView">
             <div>
-              <img src="../assets/nft.png" alt="" srcset="" class="mainImg">
+              <img src="../assets/nft.webp" alt="" srcset="" class="mainImg">
             </div>
             <div class="textWidth">
               <p class="textTitle">NFT</p>
@@ -138,7 +138,7 @@
               <p class="textSubTitle">Purchase tokens through DEX without additional fees and restrictions.</p>
             </div>
             <div>
-              <img src="../assets/swap.png" alt="" srcset="" class="mainImg">
+              <img src="../assets/swap.webp" alt="" srcset="" class="mainImg">
             </div>
           </div>
           <div class="centerView">
@@ -147,17 +147,17 @@
           </div>
           <div class="iconList">
             <div class="iconBox">
-              <div class="iconBoxIcon"><img src="../assets/github.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+              <div class="iconBoxIcon"><img src="../assets/github.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>GitHub</p>
               </div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon"><img src="../assets/Tick.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+              <div class="iconBoxIcon"><img src="../assets/Tick.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">MaskDao</div>
             </div>
             <div class="iconBox">
-              <div class="iconBoxIcon"><img src="../assets/Menu.png" alt="" srcset="" style="width: 48px;height: 48px"></div>
+              <div class="iconBoxIcon"><img src="../assets/Menu.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>Mask Snapshot</p>
               </div>
@@ -167,36 +167,36 @@
             <div class="title">Partner&Supporter</div>
             <div class="list">
               <div>
-                  <img class="partImg" src="../assets/p1.png" alt="" srcset="" style="width: 165px;height: 33px;">
+                  <img class="partImg" src="../assets/p1.webp" alt="" srcset="" style="width: 165px;height: 33px;">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p2.png" alt="" srcset="" style="width: 142px;height: 54px;">
+                  <img class="partImg" src="../assets/p2.webp" alt="" srcset="" style="width: 142px;height: 54px;">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p3.png" alt="" srcset="" style="width: 136px;height: 48px;">
+                  <img class="partImg" src="../assets/p3.webp" alt="" srcset="" style="width: 136px;height: 48px;">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p4.png" alt="" srcset="" style="width: 156px;height: 46px;">
+                  <img class="partImg" src="../assets/p4.webp" alt="" srcset="" style="width: 156px;height: 46px;">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p5.png" alt="" srcset="" style="width: 199px;height: 28px;">
+                  <img class="partImg" src="../assets/p5.webp" alt="" srcset="" style="width: 199px;height: 28px;">
               </div>
             <!-- </div>
             <div class="list"> -->
               <div>
-                  <img class="partImg" src="../assets/p6.png" alt="" srcset="" style="">
+                  <img class="partImg" src="../assets/p6.webp" alt="" srcset="" style="">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p7.png" alt="" srcset="" style="width: 96px;height: 56px;">
+                  <img class="partImg" src="../assets/p7.webp" alt="" srcset="" style="width: 96px;height: 56px;">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p8.png" alt="" srcset="" style="width: 199px;height: 35x;">
+                  <img class="partImg" src="../assets/p8.webp" alt="" srcset="" style="width: 199px;height: 35x;">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p9.png" alt="" srcset="" style="width: 162px;height: 44px;">
+                  <img class="partImg" src="../assets/p9.webp" alt="" srcset="" style="width: 162px;height: 44px;">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p10.png" alt="" srcset="" style="width: 94px;height: 65px;">
+                  <img class="partImg" src="../assets/p10.webp" alt="" srcset="" style="width: 94px;height: 65px;">
               </div>
             </div>
           </div>
@@ -494,7 +494,7 @@ export default {
 		height: 812px;
 	}
 	.headImgView .headImg {
-		background-image: url("../assets/index_head.png");
+		background-image: url("../assets/index_head.webp");
 		width: 100%;
 		height: 812px;
 		background-position: center;

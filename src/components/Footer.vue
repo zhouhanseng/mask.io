@@ -1,6 +1,6 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:45
  * @LastEditors: jimmy
@@ -10,7 +10,7 @@
     <div class="content">
         <div class="body">
             <div class="leftBox">
-                <div class="logoView"><img src="../assets/logo.png" alt="" srcset="" style="width: 140px;height: 40px"></div>
+                <div class="logoView"><img src="../assets/logo.webp" alt="" srcset="" style="width: 140px;height: 40px"></div>
                 <div class="subtitle">Mask Network is developed and Maintained by Dimension. </div>
                 <div class="subtitle mt10">Mask network is a free and open source software.</div>
                 <div class="subtitle mt20 white">© 2018-2021 Mask.io</div>
@@ -46,11 +46,11 @@
                 <div class="Community">
                     <div class="title">Community</div>
                     <div class="commun">
-                        <div class="navBox"><img src="../assets/nav-1.png" style="width: 12px;"></div>
-                        <div class="navBox"><img src="../assets/nav-2.png" style="width: 21px;"></div>
-                        <div class="navBox"><img src="../assets/nav-3.png" style="width: 21px;"></div>
-                        <div class="navBox"><img src="../assets/nav-4.png" style="width: 19px;"></div>
-                        <div class="navBox"><img src="../assets/nav-5.png" style="width: 18px;"></div>
+                        <div class="navBox"><img src="../assets/nav-1.webp" style="width: 12px;"></div>
+                        <div class="navBox"><img src="../assets/nav-2.webp" style="width: 21px;"></div>
+                        <div class="navBox"><img src="../assets/nav-3.webp" style="width: 21px;"></div>
+                        <div class="navBox"><img src="../assets/nav-4.webp" style="width: 19px;"></div>
+                        <div class="navBox"><img src="../assets/nav-5.webp" style="width: 18px;"></div>
                     </div>
                 </div>
 

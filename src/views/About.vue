@@ -15,7 +15,7 @@
         <h3>Mask Network aims to bridge the Web 2.0 users to Web 3.0.</h3>
         <p>By bringing the amazing decentralized application ecosystem onto traditional social networks, the Mask extension provides a decentralized option for features Web 2.0 users are familiar with. Users could enjoy secure, decentralized social messaging, payment networks, file storage, and file sharing without leaving the mainstream social media networks. Users could get a glimpse of the magic of the Web 3.0 world in an easy and effortless way.We at Mask Network are strong believers in the ownership economy. People should own what they produce, their data, their attention, and the virtual space they choose to contribute to. And we hereby invite everyone who sees this message to join us in the course of regaining control of our personal data.</p>
       </div>
-      <img class="about_img"  src="../assets/about.png">
+      <img class="about_img"  src="../assets/about.webp">
     </div>
     <Footer />
   </div>

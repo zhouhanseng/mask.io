@@ -7,13 +7,13 @@
       <span>Enjoy the web3.0 world at your fingertips</span>
     </div>
     <div class="img-box">
-      <img class="header" src="../assets/download_header.png" />
+      <img class="header" src="../assets/download_header.webp" />
     </div>
     <div class="store-content">
       <div class="store-item store-space">
         <h1>Chrome / Edge</h1>
         <span>Status: stable</span>
-        <img src="../assets/icon_chrome.png"/>
+        <img src="../assets/icon_chrome.webp"/>
         <div class="store-button">
           <span>Chrome Web Store</span>
         </div>
@@ -21,7 +21,7 @@
       <div class="store-item store-space">
         <h1>FireFox</h1>
         <span>Status: stable</span>
-        <img src="../assets/icon_firefox.png"/>
+        <img src="../assets/icon_firefox.webp"/>
         <div class="store-button">
           <span>ADD-Ons Store</span>
         </div>
@@ -42,7 +42,7 @@
 
       </div>
 
-      <img src="../assets/app_preview.png">
+      <img src="../assets/app_preview.webp">
     </div>
     <div class="apk-content">
       <div class="apk">
@@ -190,7 +190,7 @@ export default {
   justify-content: center;
   height: 200px;
   width: 200px;
-  background: url("../assets/mask_logo.png") space;
+  background: url("../assets/mask_logo.webp") space;
 }
 
 .apk-button {

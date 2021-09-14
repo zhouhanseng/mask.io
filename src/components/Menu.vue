@@ -1,6 +1,6 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:27
  * @LastEditors: jimmy
@@ -10,7 +10,7 @@
     <div class="menuContent" :style="{background: transparent?'transparent':'white'}">
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
         <div style="padding-left: 30px;">
-            <img src="../assets/logo.png" alt="" style="width: 137px;">
+            <img src="../assets/logo.webp" alt="" style="width: 137px;">
         </div>
         <md-tabs v-if="isPc" md-alignment="centered" style="flex: 1;" :class="{'md-transparent': transparent, 'md-accent': transparent}">
             <md-tab id="tab-home" md-label="Home"></md-tab>
