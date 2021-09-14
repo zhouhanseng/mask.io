@@ -4,10 +4,10 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:27
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-12 19:35:44
+ * @LastEditTime: 2021-09-14 13:45:33
 -->
 <template>
-    <div class="content">
+    <div class="menuContent">
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
         <div style="padding-left: 30px;">Mask</div>
         <md-tabs v-if="isPc" md-alignment="centered" style="flex: 1">
@@ -84,7 +84,7 @@ export default {
 </script>
 
 <style scoped>
-.content {
+.menuContent {
 	display: flex;
 	align-items: center;
 	background: white;

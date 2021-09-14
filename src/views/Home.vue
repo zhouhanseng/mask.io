@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 11:53:45
+ * @LastEditTime: 2021-09-14 13:41:08
 -->
 <template>
   <div class="home">
@@ -43,7 +43,7 @@
               </div>
             </div>
             <div>
-              <img src="../assets/discover.png" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/discover.png" alt="" srcset="" class="mainImg">
             </div>
           </div>
           <div class="iconList">
@@ -84,12 +84,12 @@
               <p class="textSubTitle">Launch decentralized asset freely and participate in token launch directly  on Twitter</p>
             </div>
             <div>
-              <img src="../assets/ito.png" alt="" srcset="" style="width: 700px;height: 900px">
+              <img class="mainImg" src="../assets/ito.png" alt="" srcset="">
             </div>
           </div>
           <div class="textImgView">
             <div>
-              <img src="../assets/redpack.png" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/redpack.png" alt="" srcset="" class="mainImg">
             </div>
             <div class="textWidth">
               <p class="textTitle">Red Packet</p>
@@ -102,12 +102,12 @@
               <p class="textSubTitle">Decentralized file storage, permanently.Upload and share files to your Mask friends on top of Arweave Network</p>
             </div>
             <div>
-              <img src="../assets/fileservice.png" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/fileservice.png" alt="" srcset="" class="mainImg">
             </div>
           </div>
           <div class="textImgView">
             <div>
-              <img src="../assets/transak.png" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/transak.png" alt="" srcset="" class="mainImg">
             </div>
             <div class="textWidth">
               <p class="textTitle">Transak</p>
@@ -120,12 +120,12 @@
               <p class="textSubTitle">Display token information, price charts and exchange information directly on social media. </p>
             </div>
             <div>
-              <img src="../assets/markets.png" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/markets.png" alt="" srcset="" class="mainImg">
             </div>
           </div>
           <div class="textImgView">
             <div>
-              <img src="../assets/nft.png" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/nft.png" alt="" srcset="" class="mainImg">
             </div>
             <div class="textWidth">
               <p class="textTitle">NFT</p>
@@ -138,7 +138,7 @@
               <p class="textSubTitle">Purchase tokens through DEX without additional fees and restrictions.</p>
             </div>
             <div>
-              <img src="../assets/swap.png" alt="" srcset="" style="width: 700px;height: 900px">
+              <img src="../assets/swap.png" alt="" srcset="" class="mainImg">
             </div>
           </div>
           <div class="centerView">
@@ -316,6 +316,10 @@ export default {
 	margin: 0 240px;
 	margin-top: 40px;
 }
+.mainImg {
+	width: 700px;
+	height: 900px;
+}
 .iconBox {
 	display: flex;
 	flex: 1;
@@ -421,12 +425,11 @@ export default {
 }
 .partImg {
 	filter: grayscale(100%);
-	-webkit-transition : -webkit-filter 200ms linear;
+	-webkit-transition: -webkit-filter 200ms linear;
 }
 .partImg:hover {
 	filter: none;
 }
-
 
 .cookieSubmitButton {
 	border-radius: 8px;
@@ -544,7 +547,10 @@ export default {
 		font-size: 16px;
 		margin: 30px 30px;
 	}
-	
+	.mainImg {
+		width: 350px;
+		height: 450px;
+	}
 	.subTitle {
 		text-align: center;
 	}
