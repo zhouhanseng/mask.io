@@ -116,8 +116,22 @@ export default {
   border-radius: 8px;
 }
 
-.store-button>span {
+.store-button > span {
   color: white;
+}
+
+.apk-button:hover,
+.store-button:hover {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: #ffffffcf;
+}
+
+.apk-button:hover > span,
+.store-button:hover > span {
+  color: #1B1B1B;
 }
 
 .app-content {
@@ -189,6 +203,5 @@ export default {
 .apk-button > span {
   color: white;
 }
-
 
 </style>
