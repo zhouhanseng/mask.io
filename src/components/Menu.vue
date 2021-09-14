@@ -4,13 +4,15 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:27
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 14:08:46
+ * @LastEditTime: 2021-09-14 15:59:07
 -->
 <template>
-    <div class="menuContent">
+    <div class="menuContent" :style="{background: transparent?'transparent':'white'}">
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-        <div style="padding-left: 30px;">Mask</div>
-        <md-tabs v-if="isPc" md-alignment="centered" style="flex: 1">
+        <div style="padding-left: 30px;">
+            <img src="../assets/logo.png" alt="" style="width: 137px;">
+        </div>
+        <md-tabs v-if="isPc" md-alignment="centered" style="flex: 1;" :class="{'md-transparent': transparent, 'md-accent': transparent}">
             <md-tab id="tab-home" md-label="Home"></md-tab>
             <md-tab id="tab-news" md-label="News"></md-tab>
             <md-tab id="tab-community" md-label="Community"></md-tab>
@@ -20,9 +22,9 @@
         </md-tabs>
         <div v-else style="flex: 1"></div>
         <div style="margin: 22.5px 0;padding-right: 30px;">
-            <div v-if="isPc" class="useMask blue">Use Mask</div>
+            <div v-if="isPc" class="useMask" :class="{blue:!transparent,transparent}">Use Mask</div>
             <md-button v-else class="md-icon-button" @click="menuVisible = !menuVisible">
-                <md-icon>menu</md-icon>
+                <md-icon :style="{color:transparent?'white':''}">menu</md-icon>
             </md-button>
         </div>
         <md-drawer v-if="!isPc" :md-active.sync="menuVisible" :md-right="true" :md-fixed="true">
@@ -63,6 +65,12 @@
 <script>
 export default {
 	name: "Menu",
+	props: {
+		transparent: {
+			type: Boolean,
+			default: false,
+		},
+	},
 	data: () => {
 		return {
 			isPc: true,
@@ -80,7 +88,7 @@ export default {
 .menuContent {
 	display: flex;
 	align-items: center;
-	background: white;
+    position: relative;
 }
 .useMask {
 	padding: 11px 20px;
@@ -88,6 +96,11 @@ export default {
 }
 .useMask.blue {
 	background: #1c68f3;
+	color: white;
+}
+.useMask.transparent {
+	background: transparent;
+    border: 1px solid white;
 	color: white;
 }
 </style>

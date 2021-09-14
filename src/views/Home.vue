@@ -4,20 +4,20 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 14:08:58
+ * @LastEditTime: 2021-09-14 15:59:28
 -->
 <template>
   <div class="home">
     <!-- 顶部菜单组件，是否通用随意。 -->
     <!-- 注意在移动端下菜单收到右侧菜单里，建议考虑采用 vue3-material 的 appbar -->
     <!-- 弹出的 cookie 应该是 snackbar -->
-    <Menu />
+    <Menu transparent />
     <!-- 这里应有一吨 Flex 布局 -->
     <div>
       <div v-if="isPc">
-        <img src="../assets/index_head.png" alt="" style="width: 100%;">
+        <img src="../assets/index_head.png" alt="" style="width: 100%;margin-top: -81px;z-index:-1;">
       </div>
-      <div v-else :style="{height: `${headImageViewHeight}px`}" class="bgImgView">
+      <div v-else :style="{height: `${headImageViewHeight}px`}" class="bgImgView" style="margin-top: -81px;z-index:-1;">
         <img ref="bgImg" src="../assets/index_head.png" :style="{transform:`scale(${imgSize})`}" alt="">
       </div>
       <div>
