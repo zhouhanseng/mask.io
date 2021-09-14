@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 11:25:11
+ * @LastEditTime: 2021-09-14 11:53:45
 -->
 <template>
   <div class="home">
@@ -204,16 +204,6 @@
             <p>We use cookies to enhance your experience, analyze our traffic, and for security and marketing. By visiting our website you agree to our use of cookies.<sapn style="color: #0F5DE9;">*Read more about cookies*</sapn></p>
             <md-button class="md-raised md-primary cookieSubmitButton" @click="showSnackbar = false">I Accept</md-button>
           </md-snackbar>
-          <div class="submitView">
-            <div>
-              <p class="submitTitle">MASK NETWORK Newsletter</p>
-              <p class="submitSubTitle">Follow us for more information about MASK</p>
-            </div>
-            <div class="submitClickView">
-              <input class="submitInput" type="text" placeholder="Please input your email address" />
-              <md-button class="md-raised md-primary submitButton">submit</md-button>
-            </div>
-          </div>
       </div>
     </div>
     <Footer />
@@ -437,58 +427,12 @@ export default {
 	filter: none;
 }
 
-.submitView {
-	background: linear-gradient(
-		270.17deg,
-		#e3f0ff 0.01%,
-		#e3efff 99.16%
-	);
-	box-shadow: 0px 50px 16px rgba(10, 1, 40, 0.1);
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	padding: 40px;
-	position: absolute;
-	width: calc(100% - 300px);
-	left: 0;
-	right: 0;
-	bottom: -80px;
-	margin: auto;
-}
+
 .cookieSubmitButton {
 	border-radius: 8px;
 	height: 55px;
 	width: 105px;
 	font-size: 14px;
-}
-.submitClickView {
-	display: flex;
-	align-items: center;
-}
-.submitTitle {
-	color: #0b0034;
-	font-size: 30px;
-	font-weight: 600;
-	margin-bottom: 15px;
-}
-.submitSubTitle {
-	color: #3c4c76;
-	font-size: 18px;
-	font-weight: 400;
-}
-.submitInput {
-	background: #ffffff;
-	box-shadow: 0px 8px 8px rgba(27, 104, 242, 0.1);
-	padding: 24px 0 24px 20px;
-	border: none;
-	width: 450px;
-}
-.submitButton {
-	/* padding: 20px 0; */
-	height: 64px;
-	width: 107px;
-	margin: 0;
 }
 @media screen and (max-width: 768px) {
 	.bgImgView {
@@ -546,12 +490,6 @@ export default {
 	.partnerView .list > div {
 		margin: 15px 0;
 	}
-	.submitView {
-		width: calc(100% - 130px);
-	}
-	.submitClickView {
-		margin-top: 45px;
-	}
 }
 
 @media screen and (max-width: 375px) {
@@ -606,22 +544,7 @@ export default {
 		font-size: 16px;
 		margin: 30px 30px;
 	}
-	.submitTitle {
-		font-size: 20px;
-	}
-	.submitSubTitle {
-		font-size: 16px;
-	}
-	.submitInput {
-		width: 204px;
-		padding: 19px 21px;
-	}
-	.submitButton {
-		height: 53px;
-	}
-	.submitView {
-		width: calc(100%);
-	}
+	
 	.subTitle {
 		text-align: center;
 	}
