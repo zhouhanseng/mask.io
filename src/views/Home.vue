@@ -286,6 +286,7 @@ export default {
 .mainBoxImg {
 	width: 800px;
 	height: 590px;
+  mix-blend-mode: multiply;
 }
 .secView {
 	display: flex;
