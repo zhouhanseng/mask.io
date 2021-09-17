@@ -4,10 +4,10 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:45
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 15:14:47
+ * @LastEditTime: 2021-09-17 17:15:06
 -->
 <template>
-    <div class="content">
+    <div class="contentFooter">
         <div class="body">
             <div class="leftBox">
                 <div class="logoView"><img src="../assets/logo.webp" alt="" srcset="" style="width: 140px;height: 40px"></div>
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style scoped>
-.content {
+.contentFooter {
 	background-color: #041b49;
 	color: rgba(255, 255, 255, 0.8);
 	padding-top: 160px;
