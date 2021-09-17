@@ -1,13 +1,13 @@
 <template>
 <div class="download">
   <Menu/>
-  <div class="content">
+  <div class="header">
     <div>
       <h1>Mask welcome your use!</h1>
       <span>Enjoy the web3.0 world at your fingertips</span>
     </div>
     <div class="img-box">
-      <img class="header" src="../assets/download_header.webp" />
+      <img class="header_text" src="../assets/download_header.webp" />
     </div>
     <div class="store-content">
       <div class="store-item store-space">
@@ -81,7 +81,7 @@ export default {
 </script>
 
 <style scoped>
-.content {
+.header {
   display: flex;
   justify-content: center;
   flex-direction: row;

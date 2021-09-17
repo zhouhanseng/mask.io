@@ -2,7 +2,7 @@
   <div class="tutorial">
     <Menu/>
 
-    <div class="content">
+    <div class="header">
       <div class="text-box">
         <span class="font-title">Send an Encrypted Text</span>
       </div>
@@ -12,7 +12,7 @@
       <div class="text-box">
         <span>todo。。。。。。。</span>
       </div>
-      <img src="../assets/tutorial_1.webp"/><div class="content" />
+      <img src="../assets/tutorial_1.webp"/><div class="header" />
 
       <div class="text-box">
         <span class="font-subtitle">2.Type in the message you would like to encrypt, then click "Finish" in the bottom right cornor.</span>
@@ -20,7 +20,7 @@
       <div class="text-box">
         <span>todo。。。。。。。</span>
       </div>
-      <img src="../assets/tutorial_2.webp"/><div class="content" />
+      <img src="../assets/tutorial_2.webp"/><div class="header" />
 
     </div>
 
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.content {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +67,7 @@ export default {
   line-height: 26px;
 }
 @media screen and (max-width: 768px) {
-  .content {
+  .header {
     display: flex;
     flex-direction: column;
     align-items: center;
