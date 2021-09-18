@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 15:59:28
+ * @LastEditTime: 2021-09-18 11:54:12
 -->
 <template>
   <div class="home">
@@ -28,7 +28,7 @@
               <p class="subTitle black">The defenders to data autonomy.</p>
             </div>
             <div>
-              <img class="mainBoxImg" src="../assets/img_1.webp" alt="" srcset="">
+              <img class="mainBoxImg" src="../assets/img_1.png" alt="" srcset="">
             </div>
           </div>
           <div class="secView">
@@ -286,7 +286,7 @@ export default {
 .mainBoxImg {
 	width: 800px;
 	height: 590px;
-  mix-blend-mode: multiply;
+	mix-blend-mode: multiply;
 }
 .secView {
 	display: flex;
@@ -375,6 +375,7 @@ export default {
 }
 .textWidth {
 	width: 620px;
+	margin-top: 60px;
 }
 .textTitle {
 	font-weight: 700;
@@ -431,6 +432,32 @@ export default {
 	height: 55px;
 	width: 105px;
 	font-size: 14px;
+}
+@media screen and (max-width: 1440px) {
+	.mainBoxImg {
+		width: 423px;
+		height: 300px;
+		margin-top: 50px;
+	}
+	.mainTitle {
+		font-size: 44px;
+		line-height: 50px;
+		font-weight: 700;
+	}
+	.subTitle {
+		font-size: 28px;
+		font-weight: 700;
+	}
+	.secBox {
+		background: linear-gradient(180deg, #c1190f 0%, #dd615a 100%);
+		padding: 60px;
+		width: 640px;
+		display: flex;
+		flex-direction: column;
+	}
+	.partnerView {
+		padding: 80px 150px;
+	}
 }
 @media screen and (max-width: 768px) {
 	.bgImgView {

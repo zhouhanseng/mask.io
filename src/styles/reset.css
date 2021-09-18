@@ -177,6 +177,12 @@ body {
 .md-snackbar.md-theme-default {
 	background-color: #041b49;
 }
+
+@media screen and (max-width: 1440px) {
+	.md-snackbar {
+		padding: 21px 100px;
+	}
+}
 @media screen and (max-width: 768px) {
 	.md-snackbar {
 		display: none;
