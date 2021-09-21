@@ -10,12 +10,16 @@ import Vue from "vue";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
 import "vue-material/dist/theme/default.css";
+import 'ant-design-vue/lib/date-picker/style/css';
+import { Collapse, Anchor } from 'ant-design-vue';
 import App from "./App.vue";
 import router from "./router";
 import "./styles/reset.css";
 
 Vue.config.productionTip = false;
 Vue.use(VueMaterial);
+Vue.use(Collapse);
+Vue.use(Anchor);
 
 const _isMobile = () => {
 	let flag = navigator.userAgent.match(

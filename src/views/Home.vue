@@ -201,7 +201,7 @@
             </div>
           </div>
           <md-snackbar :md-position="'center'" :md-duration="Infinity" :md-active.sync="showSnackbar" md-persistent>
-            <p>We use cookies to enhance your experience, analyze our traffic, and for security and marketing. By visiting our website you agree to our use of cookies.<sapn style="color: #0F5DE9;">*Read more about cookies*</sapn></p>
+            <p>We use cookies to enhance your experience, analyze our traffic, and for security and marketing. By visiting our website you agree to our use of cookies.<span style="color: #0F5DE9;">*Read more about cookies*</span></p>
             <md-button class="md-raised md-primary cookieSubmitButton" @click="showSnackbar = false">I Accept</md-button>
           </md-snackbar>
       </div>
