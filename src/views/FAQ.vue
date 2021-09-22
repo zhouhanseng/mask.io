@@ -4,22 +4,22 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:50:19
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-22 11:21:42
+ * @LastEditTime: 2021-09-22 13:32:09
 -->
 <template>
   <div class="faq">
     <Menu />
     <div class="header">
       <div class="header_text">
-        <h1>How can we help you?</h1>
+        <div>How can we help you?</div>
       </div>
       <img class="about_img"  src="../assets/faq_img.png">
     </div>
     <div class="content">
       <div class="questions">
-        <div style="margin-bottom: 60px;"><span class="bigTitle on">FAQ\</span><span class="bigTitle">Tutorial</span></div>
+        <div @click="switchFAQ = !switchFAQ" style="margin-bottom: 60px;"><span class="bigTitle" :class="{'on':switchFAQ}">FAQ\</span><span class="bigTitle" :class="{'on':!switchFAQ}">Tutorial</span></div>
 
-        <div>
+        <div v-if="switchFAQ">
           <div class="faqTitleLine" id="getting-started"><img src="../assets/faq_arrow.png" /><p>Getting Started</p></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
@@ -164,9 +164,47 @@
 
           </a-collapse>
         </div>
+        <div v-else>
+          <div class="faqTitleLine" id="getting-started"><p>An (In)Complete Guide to Mask Network</p></div>
+          <p class="collapseSubTitle" style="margin-left: 0">Mask Network is the portal to the new internet that connects mainstream Web 2.0 social media with the open, decentralized Web 3.0. Through our browser extension, users could get a glimpse of the decentralized application world. You can easily make borderless cryptocurrency transfers, decentralized file storage and sharing, display and trade NFTs, participate in various DeFi projects, and vote on governance proposals. Do everything in a Web 3.0 way, but on top of Web 2.0.</p>
+
+          <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_redpacket.png" /><h2>Setup</h2></div>
+          <div class="tutLine">Installation & set up</div>
+          <div class="tutLine">Setting up your wallet (Support MetaMask and WalletConnect)</div>
+          <div class="tutLine">Manually update the Mask Network plugin</div>
+          <div class="tutLine">How to make a backup and restore</div>
+
+          <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_redpacket.png" /><h2>Switch Network & Cross Chain</h2></div>
+          <div class="tutLine">Switch network between ETH, BSC, and Polygon</div>
+          <div class="tutLine">Use the Polygon Bridge to convert from Ethereum Mainnet and Polygon</div>
+          <div class="tutLine">Use the Mask Bridge to convert from Ethereum Mainnet and BSC</div>
+
+          <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_redpacket.png" /><h2>Features</h2></div>
+          <div class="tutLine">Send an Encrypted Text</div>
+          <div class="tutLine">Send a Red Packet (Support ETH, BSC and Polygon)</div>
+          <div class="tutLine">Use File Service via Arweave (IPFS, SIA, Swarm soon)</div>
+          <div class="tutLine">Quick gitcoin donation (Support ETH )</div>
+          <div class="tutLine">Cast a Snapshot vote (Support ETH )</div>
+          <div class="tutLine">Launch an ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)</div>
+          <div class="tutLine">Participate in ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)</div>
+          <div class="tutLine">显示用户的NFT在Twitter 的Profile页面中</div>
+
+          <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_redpacket.png" /><h2>$Mask Token Related</h2></div>
+          <div class="tutLine">How to add $MASK liquidity to PancakeSwap</div>
+
+          <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_redpacket.png" /><h2>Third-party Plugins</h2></div>
+          <div class="tutLine">通过 Mask Network 购买 Valuable 上的推文NFT</div>
+          <div class="tutLine">在社交媒体上通过Coingecko和CoinMarketcap查看数字货币信息和详情</div>
+          <div class="tutLine">Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)</div>
+          <div class="tutLine">Trade tokens via Uniswap, Sushi, 0x,Balancer, Dodo,etc. on Twitter (Support ETH, BSC and Polygon)</div>
+          <div class="tutLine">Purchase NFTs or place a bid for NFTs via OpenSea or Rarible on Twitter</div>
+          <div class="tutLine">Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)</div>
+          <div class="tutLine">Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)</div>
+          <div class="tutLine">Copy your favourite manager's portfolio via dHEDGE on Twitter (ETH and Polygon)</div>
+        </div>
       </div>
 
-      <a-anchor :wrapperClass="'anchorTitle'" :target-offset="targetOffset">
+      <a-anchor v-if="switchFAQ" :wrapperClass="'anchorTitle'" :target-offset="targetOffset">
         <a-anchor-link href="#getting-started" title="Getting Started" />
         <a-anchor-link href="#trade-and-swaps" title="Trade and Swaps" />
         <a-anchor-link href="#file-service" title="File Service" />
@@ -192,6 +230,7 @@ export default {
 		return {
 			isPc: true,
 			targetOffset: 0,
+      switchFAQ: false,
 		};
 	},
 	mounted() {
@@ -214,9 +253,12 @@ export default {
 
 .header_text {
 	display: flex;
+  flex: 1;
 	width: 600px;
+  font-size: 64px;
 	align-items: center;
 	justify-content: center;
+  text-align: center;
 }
 
 .about_img {
@@ -275,6 +317,15 @@ export default {
 .ant-anchor-link-title-active {
 	color: #07080a !important;
 	font-weight: 700 !important;
+}
+
+.tutLine {
+  font-size: 20px;
+  color: #07080A;
+}
+
+.tutLine + .tutLine {
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 768px) {
