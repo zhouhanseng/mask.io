@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:50:19
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-22 11:10:45
+ * @LastEditTime: 2021-09-22 11:19:03
 -->
 <template>
   <div class="faq">
@@ -20,7 +20,7 @@
         <div style="margin-bottom: 60px;"><span class="bigTitle on">FAQ\</span><span class="bigTitle">Tutorial</span></div>
 
         <div>
-          <div class="faqTitleLine"><img src="../assets/faq_arrow.png" /><p>Getting Started</p></div>
+          <div class="faqTitleLine" id="getting-started"><img src="../assets/faq_arrow.png" /><p>Getting Started</p></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
               <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
@@ -43,7 +43,7 @@
             </a-collapse-panel>
           </a-collapse>
 
-          <div class="faqTitleLine faqMt"><img src="../assets/faq_swap.png" /><h2>Trade and Swaps</h2></div>
+          <div class="faqTitleLine faqMt" id="trade-and-swaps"><img src="../assets/faq_swap.png" /><h2>Trade and Swaps</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
               <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
@@ -68,7 +68,7 @@
             </a-collapse-panel>
           </a-collapse>
 
-          <div class="faqTitleLine faqMt"><img src="../assets/faq_folder.png" /><h2>File Service</h2></div>
+          <div class="faqTitleLine faqMt" id="file-service"><img src="../assets/faq_folder.png" /><h2>File Service</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
               <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
@@ -87,7 +87,7 @@
             </a-collapse-panel>
           </a-collapse>
 
-          <div class="faqTitleLine faqMt"><img src="../assets/faq_chart.png" /><h2>About ITO</h2></div>
+          <div class="faqTitleLine faqMt" id="about-ito"><img src="../assets/faq_chart.png" /><h2>About ITO</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
               <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
@@ -118,7 +118,7 @@
             </a-collapse-panel>
           </a-collapse>
 
-          <div class="faqTitleLine faqMt"><img src="../assets/faq_wallet.png" /><h2>Wallet</h2></div>
+          <div class="faqTitleLine faqMt" id="wallet"><img src="../assets/faq_wallet.png" /><h2>Wallet</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
               <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
@@ -135,7 +135,7 @@
 
           </a-collapse>
 
-          <div class="faqTitleLine faqMt"><img src="../assets/faq_redpacket.png" /><h2>Red Packet</h2></div>
+          <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_redpacket.png" /><h2>Red Packet</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
               <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
@@ -201,6 +201,9 @@ export default {
 };
 </script>
 <style scoped>
+.faq {
+	background: white;
+}
 .header {
 	display: flex;
 	flex-direction: row;
@@ -264,14 +267,14 @@ export default {
 	margin-top: 136px;
 }
 .anchorTitle {
-  color: #777E90 !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
+	color: #777e90 !important;
+	font-size: 14px !important;
+	font-weight: 400 !important;
 }
 
 .anchorTitle.on {
-  color: #07080A !important;
-  font-weight: 700 !important;
+	color: #07080a !important;
+	font-weight: 700 !important;
 }
 
 @media screen and (max-width: 768px) {

@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:41:42
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-22 10:57:26
+ * @LastEditTime: 2021-09-22 11:17:31
  */
 import Vue from "vue";
 import VueMaterial from "vue-material";
@@ -12,6 +12,7 @@ import "vue-material/dist/vue-material.min.css";
 import "vue-material/dist/theme/default.css";
 import "ant-design-vue/lib/date-picker/style/css";
 import { Collapse, Anchor, Icon } from "ant-design-vue";
+import 'ant-design-vue/lib/anchor/style/css';
 import App from "./App.vue";
 import router from "./router";
 import "./styles/reset.css";
