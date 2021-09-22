@@ -2,7 +2,7 @@
 <div class="download">
   <Menu/>
   <div class="header">
-    <div>
+    <div class="title">
       <h1>Mask welcome your use!</h1>
       <span>Enjoy the web3.0 world at your fingertips</span>
     </div>
@@ -86,6 +86,21 @@ export default {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.title > h1 {
+  font-size: 64px;
+}
+.title > span {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
 }
 .img-box {
   width: 100%;

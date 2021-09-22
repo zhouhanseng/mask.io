@@ -3,13 +3,13 @@
     <Menu/>
 
     <div class="header">
-      <div class="text-box">
+      <div class="text-box title">
         <span class="font-title">Send an Encrypted Text</span>
       </div>
       <div class="text-box">
         <span class="font-subtitle">1.Click the Mask Icon.</span>
       </div>
-      <div class="text-box">
+      <div class="text-box line">
         <span>todo。。。。。。。</span>
       </div>
       <img src="../assets/tutorial_1.webp"/><div class="header" />
@@ -17,7 +17,7 @@
       <div class="text-box">
         <span class="font-subtitle">2.Type in the message you would like to encrypt, then click "Finish" in the bottom right cornor.</span>
       </div>
-      <div class="text-box">
+      <div class="text-box line">
         <span>todo。。。。。。。</span>
       </div>
       <img src="../assets/tutorial_2.webp"/><div class="header" />
@@ -48,6 +48,18 @@ export default {
 }
 .text-box {
   width: 100%;
+}
+
+img {
+  margin-top: 40px;
+}
+
+.line {
+  margin-top: 20px;
+}
+
+.title {
+  margin-bottom: 100px;
 }
 
 .font-title {

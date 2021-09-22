@@ -69,6 +69,8 @@ export default {
 	width: 500px;
 	color: #353945;
 	font-size: 20px;
+  line-height: 26px;
+  opacity: 0.6;
 	font-weight: 400;
 }
 
@@ -120,6 +122,8 @@ export default {
 	.header_text p {
 		width: 351px;
 		color: #353945;
+    line-height: 26px;
+    opacity: 0.6;
 		font-size: 14px;
 		font-weight: 400;
 	}
