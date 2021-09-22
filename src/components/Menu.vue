@@ -12,13 +12,19 @@
         <div style="padding-left: 30px;">
             <img src="../assets/logo.webp" alt="" style="width: 137px;">
         </div>
-        <md-tabs v-if="isPc" md-alignment="centered" style="flex: 1;" :class="{'md-transparent': transparent, 'md-accent': transparent}">
-            <md-tab id="tab-home" md-label="Home"></md-tab>
+        <md-tabs md-sync-route v-if="isPc" md-alignment="centered" style="flex: 1;" :class="{'md-transparent': transparent, 'md-accent': transparent}">
+            <md-tab id="tab-home" md-label="Home" to="/">
+              <router-view></router-view>
+            </md-tab>
             <md-tab id="tab-news" md-label="News"></md-tab>
             <md-tab id="tab-community" md-label="Community"></md-tab>
-            <md-tab id="tab-help" md-label="Help"></md-tab>
+            <md-tab id="tab-help" md-label="Help" to="/faq">
+              <router-view></router-view>
+            </md-tab>
             <md-tab id="tab-docs" md-label="Docs"></md-tab>
-            <md-tab id="tab-about" md-label="About"></md-tab>
+            <md-tab id="tab-about" md-label="About" to="about">
+              <router-view></router-view>
+            </md-tab>
         </md-tabs>
         <div v-else style="flex: 1"></div>
         <div style="margin: 22.5px 0;padding-right: 30px;">
