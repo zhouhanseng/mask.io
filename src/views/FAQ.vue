@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:50:19
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-22 11:19:03
+ * @LastEditTime: 2021-09-22 11:21:42
 -->
 <template>
   <div class="faq">
@@ -166,7 +166,7 @@
         </div>
       </div>
 
-      <a-anchor :target-offset="targetOffset">
+      <a-anchor :wrapperClass="'anchorTitle'" :target-offset="targetOffset">
         <a-anchor-link href="#getting-started" title="Getting Started" />
         <a-anchor-link href="#trade-and-swaps" title="Trade and Swaps" />
         <a-anchor-link href="#file-service" title="File Service" />
@@ -266,13 +266,13 @@ export default {
 .faqMt {
 	margin-top: 136px;
 }
-.anchorTitle {
+.ant-anchor-link-title {
 	color: #777e90 !important;
 	font-size: 14px !important;
 	font-weight: 400 !important;
 }
 
-.anchorTitle.on {
+.ant-anchor-link-title-active {
 	color: #07080a !important;
 	font-weight: 700 !important;
 }
