@@ -28,7 +28,7 @@
               <p class="subTitle black">The defenders to data autonomy.</p>
             </div>
             <div>
-              <img class="mainBoxImg" src="../assets/img_1.png" alt="" srcset="">
+              <img class="mainBoxImg" src="../assets/img_1.png" alt="" srcset="" style="mix-blend-mode: multiply">
             </div>
           </div>
           <div class="secView">
