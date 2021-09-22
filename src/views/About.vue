@@ -90,7 +90,7 @@ export default {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 428px) {
 	.header {
 		display: flex;
 		flex-direction: column;

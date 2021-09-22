@@ -258,7 +258,7 @@ export default {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 428px) {
 	.body {
 		padding-bottom: 40px;
 		padding-top: 30px;

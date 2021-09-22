@@ -216,7 +216,7 @@ export default {
   color: white;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 428px) {
   .store-content {
     width: 100%;
     display: flex;

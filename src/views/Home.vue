@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:48:18
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-18 11:54:12
+ * @LastEditTime: 2021-09-22 13:54:25
 -->
 <template>
   <div class="home">
@@ -313,7 +313,7 @@ export default {
 }
 .mainImg {
 	width: 700px;
-	height: 900px;
+	/* height: 900px; */
 }
 .iconBox {
 	display: flex;
@@ -358,7 +358,7 @@ export default {
 .centerSubTitle {
 	color: #777e90;
 	font-size: 24px;
-	line-height: 17px;
+	line-height: 20px;
 	margin: 0;
 	margin-bottom: 10px;
 }
@@ -517,7 +517,7 @@ export default {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 428px) {
 	.headImgView {
 		height: 812px;
 	}
@@ -571,7 +571,7 @@ export default {
 	}
 	.mainImg {
 		width: 350px;
-		height: 450px;
+		/* height: 450px; */
 	}
 	.subTitle {
 		text-align: center;
