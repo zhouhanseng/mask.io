@@ -20,7 +20,12 @@
       <div class="text-box line">
         <span>todo。。。。。。。</span>
       </div>
-      <img src="../assets/tutorial_2.webp"/><div class="header" />
+      <img src="../assets/tutorial_2.webp"/>
+      <div class="header" />
+      <div style="width: 100%">
+        <a href="javascript:history.back()"><img src="../assets/arrow_left.svg"></a>
+      </div>
+      <div class="header" />
 
     </div>
 
