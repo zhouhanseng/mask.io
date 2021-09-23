@@ -10,7 +10,8 @@
     <div class="menuContent" :style="{background: transparent?'transparent':'white'}">
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
         <div style="padding-left: 30px;">
-            <img src="../assets/logo.webp" alt="" style="width: 137px;">
+          <img v-if="blueLogo === true" src="../assets/logo_blue.png" alt="" style="width: 137px;">
+          <img v-else src="../assets/logo.webp" alt="" style="width: 137px;">
         </div>
         <md-tabs md-sync-route v-if="isPc" md-alignment="centered" style="flex: 1;" :class="{'md-transparent': transparent, 'md-accent': transparent}">
             <md-tab id="tab-home" md-label="Home" to="/">
@@ -76,6 +77,10 @@ export default {
 			type: Boolean,
 			default: false,
 		},
+    blueLogo: {
+      type: Boolean,
+      default: true,
+    }
 	},
 	data: () => {
 		return {
