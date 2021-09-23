@@ -206,7 +206,7 @@
           </md-snackbar>
       </div>
     </div>
-    <Footer />
+    <Footer has-subscript="true" />
     <!-- 底部深蓝色通用页脚 -->
   </div>
 </template>

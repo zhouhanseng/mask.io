@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="footerSubtext">I thought what I'd do was, I'd pretend I was one of those deaf-mutes.</div>
-        <div class="submitView">
+        <div class="submitView" v-if="hasSubscript">
             <div>
               <p class="submitTitle">MASK NETWORK Newsletter</p>
               <p class="submitSubTitle">Follow us for more information about MASK</p>
@@ -73,6 +73,12 @@
 <script>
 export default {
 	name: "Footer",
+  props: {
+    hasSubscript: {
+      type: Boolean,
+      default: false
+    }
+  }
 };
 </script>
 
