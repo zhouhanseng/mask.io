@@ -10,10 +10,12 @@
   <div class="faq">
     <Menu />
     <div class="header">
-      <div class="header_text">
+      <div class="header_text" v-if="isPc">
         <div>How can we help you?</div>
       </div>
-      <img class="about_img"  src="../assets/faq_img.png">
+      <div class="about_img">
+        <div v-if="!isPc"><span class="text-on-image">How can we help you?</span></div>
+      </div>
     </div>
     <div class="content">
       <div class="questions">
@@ -21,7 +23,7 @@
 
         <div v-if="switchFAQ">
           <div class="faqTitleLine" id="getting-started"><img src="../assets/faq_arrow.png" /><p>Getting Started</p></div>
-          <a-collapse default-active-key="1" :bordered="false">
+          <a-collapse v-if="isPc" default-active-key="1" :bordered="false">
             <template #expandIcon="props">
               <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
               <a-icon style="margin-right: 25px;" v-else type="plus" />
@@ -263,13 +265,21 @@ export default {
 
 .about_img {
 	height: 651px;
+  width: 50%;
+  background-image: url("../assets/faq_img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 120px;
-	margin: 240px 320px 0 320px;
+	margin: 240px 20% 0 20%;
 }
 .bigTitle {
 	font-size: 48px;
@@ -334,11 +344,26 @@ export default {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding: 120px 84px;
+		padding: 0 0;
 	}
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 120px;
+    margin: 20px;
+  }
+
 	.about_img {
-		margin-top: 45px;
+    width: 100%;
 	}
+
+  .text-on-image {
+    font-weight: bold;
+    font-size: 64px;
+    color: #E6E8EC;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 428px) {
@@ -347,8 +372,7 @@ export default {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding: 50px 15px;
-		padding-bottom: 150px;
+		padding: 0 0;
 	}
 
 	.header_text {
