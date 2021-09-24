@@ -170,14 +170,14 @@
           <div class="faqTitleLine" id="getting-started"><p>An (In)Complete Guide to Mask Network</p></div>
           <p class="collapseSubTitle" style="margin-left: 0">Mask Network is the portal to the new internet that connects mainstream Web 2.0 social media with the open, decentralized Web 3.0. Through our browser extension, users could get a glimpse of the decentralized application world. You can easily make borderless cryptocurrency transfers, decentralized file storage and sharing, display and trade NFTs, participate in various DeFi projects, and vote on governance proposals. Do everything in a Web 3.0 way, but on top of Web 2.0.</p>
 
-          <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_redpacket.png" /><h2>Setup</h2></div>
+          <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_setup.png" /><h2>Setup</h2></div>
           <div class="tutLine">Installation & set up</div>
           <div class="tutLine">Setting up your wallet (Support MetaMask and WalletConnect)</div>
           <div class="tutLine">Manually update the Mask Network plugin</div>
           <div class="tutLine">Back up your private key</div>
 
           <div class="faqTitleLine faqMt">
-            <img src="../assets/faq_redpacket.png" />
+            <img src="../assets/faq_switch.png" />
             <h2>Features</h2>
           </div>
           <div class="tutLine">Send an Encrypted Text</div>
@@ -192,7 +192,7 @@
           <div class="tutLine">Display the NFTs you own on your Twitter profile</div>
 
           <div class="faqTitleLine faqMt" id="red-packet">
-            <img src="../assets/faq_redpacket.png" />
+            <img src="../assets/faq_add.png" />
             <h2>Switch Network & Cross Chain</h2>
           </div>
           <div class="tutLine">Switch network between ETH, BSC, and Polygon</div>
@@ -200,13 +200,13 @@
           <div class="tutLine">Convert $MASK from ERC20 to BEP20</div>
 
           <div class="faqTitleLine faqMt" id="red-packet">
-            <img src="../assets/faq_redpacket.png" />
+            <img src="../assets/faq_dollar.png" />
             <h2>$Mask Token Related</h2>
           </div>
           <div class="tutLine">How to add $MASK liquidity to PancakeSwap</div>
 
           <div class="faqTitleLine faqMt" id="red-packet">
-            <img src="../assets/faq_redpacket.png" />
+            <img src="../assets/faq_plugin.png" />
             <h2>Third-party Plugins</h2>
           </div>
           <div class="tutLine">See the latest offer of a Tweet NFT by Valuables Plugin</div>
