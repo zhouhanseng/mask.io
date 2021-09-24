@@ -227,14 +227,14 @@ export default {
 @media screen and (max-width: 768px) {
 	.body {
 		flex-wrap: wrap;
+    justify-content: left;
 	}
 	.leftBox {
 		padding: 0;
-		margin: 0;
-		border-right: none;
+    border-right: none;
 		padding-bottom: 88px;
-		margin-bottom: 78px;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 0 78px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	}
 	.subtitle {
 		width: auto;
