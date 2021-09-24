@@ -206,7 +206,7 @@
         </div>
       </div>
 
-      <a-anchor v-if="switchFAQ" :wrapperClass="'anchorTitle'" :target-offset="targetOffset">
+      <a-anchor class="anchor" v-if="switchFAQ" :wrapperClass="'anchorTitle'" :target-offset="targetOffset">
         <a-anchor-link href="#getting-started" title="Getting Started" />
         <a-anchor-link href="#trade-and-swaps" title="Trade and Swaps" />
         <a-anchor-link href="#file-service" title="File Service" />
@@ -244,6 +244,9 @@ export default {
 <style scoped>
 .faq {
 	background: white;
+}
+.anchor {
+  width: 200px;
 }
 .header {
 	display: flex;
