@@ -506,6 +506,10 @@ export default {
 	.iconList {
 		margin: 0 100px;
 	}
+  .iconBox {
+    min-width: 200px;
+    max-width: 204px;
+  }
 	.partnerView {
 		padding: 80px 0px;
 	}
@@ -514,6 +518,10 @@ export default {
 	}
 	.partnerView .list > div {
 		margin: 15px 0;
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	}
 }
 
@@ -582,5 +590,11 @@ export default {
 	.iconList {
 		margin: 0 60px;
 	}
+  .iconBox {
+    min-width: 100px;
+    max-width: 100px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 </style>
