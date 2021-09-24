@@ -8,6 +8,7 @@
 -->
 <template>
     <div class="contentFooter">
+      <div style="width: 1px; height: 160px;" v-if="hasSubscript" />
         <div class="body">
             <div class="leftBox">
                 <div class="logoView"><img src="../assets/logo.webp" alt="" srcset="" style="width: 140px;height: 40px"></div>
@@ -86,7 +87,6 @@ export default {
 .contentFooter {
 	background-color: #041b49;
 	color: rgba(255, 255, 255, 0.8);
-	padding-top: 160px;
 	position: relative;
 }
 .white {
