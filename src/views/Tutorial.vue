@@ -8,6 +8,7 @@
           :markdown="this.fileContent"
           flavor="github"
           :options="{ emoji: true }"
+          class="showdown"
       />
 
       <div style="width: 100%">
@@ -25,6 +26,7 @@
 import Menu from "../components/Menu"
 import Footer from "../components/Footer"
 import VueShowdown from 'vue-showdown'
+import '../styles/markdown.css'
 
 export default {
   name: "Tutorial",
@@ -74,20 +76,7 @@ export default {
   justify-content: center;
   padding: 120px 33%;
 }
-.text-box {
-  width: 100%;
-}
-
-img {
-  margin-top: 40px;
-}
-
-.line {
-  margin-top: 20px;
-}
-
-.title {
-  margin-bottom: 100px;
+.showdown {
 }
 
 .font-title {
