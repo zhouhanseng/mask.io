@@ -171,50 +171,50 @@
           <p class="collapseSubTitle" style="margin-left: 0">Mask Network is the portal to the new internet that connects mainstream Web 2.0 social media with the open, decentralized Web 3.0. Through our browser extension, users could get a glimpse of the decentralized application world. You can easily make borderless cryptocurrency transfers, decentralized file storage and sharing, display and trade NFTs, participate in various DeFi projects, and vote on governance proposals. Do everything in a Web 3.0 way, but on top of Web 2.0.</p>
 
           <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_setup.png" /><h2>Setup</h2></div>
-          <div class="tutLine">Installation & set up</div>
-          <div class="tutLine">Setting up your wallet (Support MetaMask and WalletConnect)</div>
-          <div class="tutLine">Manually update the Mask Network plugin</div>
-          <div class="tutLine">Back up your private key</div>
+          <div class="tutLine"><a href="../tutorial?a=install.md">Installation & set up</a></div>
+          <div class="tutLine"><a href="../tutorial?a=setup.md">Setting up your wallet (Support MetaMask and WalletConnect)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=update.md">Manually update the Mask Network plugin</a></div>
+          <div class="tutLine"><a href="../tutorial?a=backup.md">Back up your private key</a></div>
 
           <div class="faqTitleLine faqMt">
             <img src="../assets/faq_switch.png" />
             <h2>Features</h2>
           </div>
-          <div class="tutLine">Send an Encrypted Text</div>
-          <div class="tutLine">Purchase NFTs or place a bid for NFTs via OpenSea or Rarible on Twitter</div>
-          <div class="tutLine">Use File Service via Arweave (IPFS, SIA, Swarm soon)</div>
-          <div class="tutLine">Cast a Snapshot vote</div>
-          <div class="tutLine">Send a Red Packet (Support ETH, BSC and Polygon)</div>
-          <div class="tutLine">Launch an ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)</div>
-          <div class="tutLine">Participate in ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)</div>
-          <div class="tutLine">Claim tokens (from ITO/Airdrop) (Support ETH only, Polygon soon)</div>
-          <div class="tutLine">Check cryptocurrency info on social media (CoinGecko, CoinMarketCap, Uniswap Info)</div>
-          <div class="tutLine">Display the NFTs you own on your Twitter profile</div>
+          <div class="tutLine"><a href="../tutorial?a=sendtext.md">Send an Encrypted Text</a></div>
+          <div class="tutLine"><a href="../tutorial?a=purchase.md">Purchase NFTs or place a bid for NFTs via OpenSea or Rarible on Twitter</a></div>
+          <div class="tutLine"><a href="../tutorial?a=fileservice.md">Use File Service via Arweave (IPFS, SIA, Swarm soon)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=snapshot.md">Cast a Snapshot vote</a></div>
+          <div class="tutLine"><a href="../tutorial?a=sendpacket.md">Send a Red Packet (Support ETH, BSC and Polygon)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=ito.md">Launch an ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=partic.md">Participate in ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=claim.md">Claim tokens (from ITO/Airdrop) (Support ETH only, Polygon soon)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=checkinfo.md">Check cryptocurrency info on social media (CoinGecko, CoinMarketCap, Uniswap Info)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=display.md">Display the NFTs you own on your Twitter profile</a></div>
 
           <div class="faqTitleLine faqMt" id="red-packet">
             <img src="../assets/faq_add.png" />
             <h2>Switch Network & Cross Chain</h2>
           </div>
-          <div class="tutLine">Switch network between ETH, BSC, and Polygon</div>
-          <div class="tutLine">Use the Polygon Bridge to convert from Ethereum Mainnet and Polygon</div>
-          <div class="tutLine">Convert $MASK from ERC20 to BEP20</div>
+          <div class="tutLine"><a href="../tutorial?a=switch.md">Switch network between ETH, BSC, and Polygon</a></div>
+          <div class="tutLine"><a href="../tutorial?a=bridge.md">Use the Polygon Bridge to convert from Ethereum Mainnet and Polygon</a></div>
+          <div class="tutLine"><a href="../tutorial?a=convert.md">Convert $MASK from ERC20 to BEP20</a></div>
 
           <div class="faqTitleLine faqMt" id="red-packet">
             <img src="../assets/faq_dollar.png" />
             <h2>$Mask Token Related</h2>
           </div>
-          <div class="tutLine">How to add $MASK liquidity to PancakeSwap</div>
+          <div class="tutLine"><a href="../tutorial?a=add.md">How to add $MASK liquidity to PancakeSwap</a></div>
 
           <div class="faqTitleLine faqMt" id="red-packet">
             <img src="../assets/faq_plugin.png" />
             <h2>Third-party Plugins</h2>
           </div>
-          <div class="tutLine">See the latest offer of a Tweet NFT by Valuables Plugin</div>
-          <div class="tutLine">Make a quick Gitcoin Grant donation using the Mask extension</div>
-          <div class="tutLine">Trade tokens via Uniswap, Sushi, 0x, etc. on Twitter (Support ETH, BSC and Polygon)</div>
-          <div class="tutLine">Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)</div>
-          <div class="tutLine">Copy your favourite manager's portfolio via dHEDGE on Twitter (ETH and Polygon)</div>
-          <div class="tutLine">Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)</div>
+          <div class="tutLine"><a href="../tutorial?a=see.md">See the latest offer of a Tweet NFT by Valuables Plugin</a></div>
+          <div class="tutLine"><a href="../tutorial?a=donation.md">Make a quick Gitcoin Grant donation using the Mask extension</a></div>
+          <div class="tutLine"><a href="../tutorial?a=trade.md">Trade tokens via Uniswap, Sushi, 0x, etc. on Twitter (Support ETH, BSC and Polygon)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=cultivate.md">Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=copy.md">Copy your favourite manager's portfolio via dHEDGE on Twitter (ETH and Polygon)</a></div>
+          <div class="tutLine"><a href="../tutorial?a=pool.md">Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)</a></div>
 
         </div>
       </div>
