@@ -16,12 +16,16 @@ import 'ant-design-vue/lib/anchor/style/css';
 import App from "./App.vue";
 import router from "./router";
 import "./styles/reset.css";
+import VueResource from 'vue-resource'
+import { VueShowdown } from 'vue-showdown'
 
 Vue.config.productionTip = false;
 Vue.use(VueMaterial);
 Vue.use(Collapse);
 Vue.use(Anchor);
 Vue.use(Icon);
+Vue.use(VueResource)
+Vue.use(VueShowdown)
 
 const _isMobile = () => {
 	let flag = navigator.userAgent.match(
