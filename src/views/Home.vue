@@ -50,8 +50,7 @@
             <div class="iconBox">
               <div class="iconBoxIcon"><img src="../assets/Menu.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
-                <p>Send encrypted messages</p>
-                <p>to designated receivers</p>
+                <p>Send encrypted messages to designated receivers</p>
               </div>
             </div>
             <div class="iconBox">
@@ -146,17 +145,17 @@
             <p class="centerSubTitle bottomSubTitle">Mask Network is trusted and supported by an active community of users and contributors. Join us!</p>
           </div>
           <div class="iconList">
-            <div class="iconBox">
+            <div class="iconBox ic3">
               <div class="iconBoxIcon"><img src="../assets/github.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>GitHub</p>
               </div>
             </div>
-            <div class="iconBox">
+            <div class="iconBox ic3">
               <div class="iconBoxIcon"><img src="../assets/Tick.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">MaskDao</div>
             </div>
-            <div class="iconBox">
+            <div class="iconBox ic3">
               <div class="iconBoxIcon"><img src="../assets/Menu.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
                 <p>Mask Snapshot</p>
@@ -167,36 +166,36 @@
             <div class="title">Partner&Supporter</div>
             <div class="list">
               <div>
-                  <img class="partImg" src="../assets/p1.webp" alt="" srcset="" style="width: 165px;height: 33px;">
+                  <img class="partImg" src="../assets/p1.webp" alt="" srcset="">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p2.webp" alt="" srcset="" style="width: 142px;height: 54px;">
+                  <img class="partImg" src="../assets/p2.webp" alt="" srcset="">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p3.webp" alt="" srcset="" style="width: 136px;height: 48px;">
+                  <img class="partImg" src="../assets/p3.webp" alt="" srcset="">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p4.webp" alt="" srcset="" style="width: 156px;height: 46px;">
+                  <img class="partImg" src="../assets/p4.webp" alt="" srcset="">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p5.webp" alt="" srcset="" style="width: 199px;height: 28px;">
+                  <img class="partImg" src="../assets/p5.webp" alt="" srcset="">
               </div>
             <!-- </div>
             <div class="list"> -->
               <div>
-                  <img class="partImg" src="../assets/p6.webp" alt="" srcset="" style="">
+                  <img class="partImg" src="../assets/p6.webp" alt="" srcset="">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p7.webp" alt="" srcset="" style="width: 96px;height: 56px;">
+                  <img class="partImg" src="../assets/p7.webp" alt="" srcset="">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p8.webp" alt="" srcset="" style="width: 199px;height: 35x;">
+                  <img class="partImg" src="../assets/p8.webp" alt="" srcset="">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p9.webp" alt="" srcset="" style="width: 162px;height: 44px;">
+                  <img class="partImg" src="../assets/p9.webp" alt="" srcset="">
               </div>
               <div>
-                  <img class="partImg" src="../assets/p10.webp" alt="" srcset="" style="width: 94px;height: 65px;">
+                  <img class="partImg" src="../assets/p10.webp" alt="" srcset="">
               </div>
             </div>
           </div>
@@ -285,7 +284,7 @@ export default {
 }
 .mainBoxImg {
 	width: 800px;
-	height: 590px;
+	height: auto;
 	mix-blend-mode: multiply;
 }
 .secView {
@@ -335,6 +334,7 @@ export default {
 	text-align: center;
 	font-weight: 700;
 	font-size: 20px;
+  line-height: 24px;
 	color: #1b1b1b;
 }
 .mainTitle {
@@ -347,7 +347,8 @@ export default {
 	font-weight: 700;
 }
 .subTitle + .subTitle {
-	margin-top: 20px;
+	margin-top: 40px;
+  line-height: 24px;
 }
 .centerTitle {
 	color: #0b0034;
@@ -436,7 +437,7 @@ export default {
 @media screen and (max-width: 1440px) {
 	.mainBoxImg {
 		width: 423px;
-		height: 300px;
+		height: auto;
 		margin-top: 50px;
 	}
 	.mainTitle {
@@ -459,6 +460,13 @@ export default {
 		padding: 80px 150px;
 	}
 }
+
+@media screen and (max-width: 844px){
+  .textWidth {
+    width: 350px;
+  }
+}
+
 @media screen and (max-width: 768px) {
 	.bgImgView {
 		display: flex;
@@ -470,7 +478,7 @@ export default {
 	}
 	.mainBoxImg {
 		width: 483px;
-		height: 360px;
+		height: auto;
 		margin-top: 50px;
 	}
 	.mainTitle {
@@ -591,10 +599,21 @@ export default {
 		margin: 0 60px;
 	}
   .iconBox {
-    min-width: 100px;
-    max-width: 100px;
+    min-width: 120px;
+    max-width: 120px;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .ic3 {
+    min-width: 84px;
+    max-width: 84px;
+  }
+
+  .partImg {
+    margin: 20px;
+    width: 100px;
+    height: auto;
   }
 }
 </style>

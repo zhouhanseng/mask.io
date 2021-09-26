@@ -11,7 +11,7 @@
     <Menu />
     <div class="header">
       <div class="header_text" v-if="isPc">
-        <div>How can we help you?</div>
+        <div><span style="font-weight: bold">How can we help you?</span></div>
       </div>
       <div class="about_img">
         <div v-if="!isPc"><span class="text-on-image">How can we help you?</span></div>
@@ -23,10 +23,10 @@
 
         <div v-if="switchFAQ">
           <div class="faqTitleLine" id="getting-started"><img src="../assets/faq_arrow.png" /><p>Getting Started</p></div>
-          <a-collapse v-if="isPc" default-active-key="1" :bordered="false">
+          <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
-              <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
-              <a-icon style="margin-right: 25px;" v-else type="plus" />
+              <a-icon class="icon-space" v-if="props.isActive" type="minus" />
+              <a-icon class="icon-space" v-else type="plus" />
             </template>
             <a-collapse-panel key="1" header="Where can I use Mask Network" class="collapseTitle">
               <p class="collapseSubTitle">Mask Network is now available on Twitter, Facebook, and Minds.com. We will support more platforms in the future.</p>
@@ -48,8 +48,8 @@
           <div class="faqTitleLine faqMt" id="trade-and-swaps"><img src="../assets/faq_swap.png" /><h2>Trade and Swaps</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
-              <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
-              <a-icon style="margin-right: 25px;" v-else type="plus" />
+              <a-icon class="icon-space" v-if="props.isActive" type="minus" />
+              <a-icon class="icon-space" v-else type="plus" />
             </template>
             <a-collapse-panel key="1" header="Where does the crypto price info come from?" class="collapseTitle">
               <p class="collapseSubTitle">Mask Network support price chart by both CoinMarketCap and CoinGecko. You can change the data source on “Settings.”</p>
@@ -73,8 +73,8 @@
           <div class="faqTitleLine faqMt" id="file-service"><img src="../assets/faq_folder.png" /><h2>File Service</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
-              <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
-              <a-icon style="margin-right: 25px;" v-else type="plus" />
+              <a-icon class="icon-space" v-if="props.isActive" type="minus" />
+              <a-icon class="icon-space" v-else type="plus" />
             </template>
             <a-collapse-panel key="1" header="How to use file service" class="collapseTitle">
               <p class="collapseSubTitle">Click the little blue face icon to“ Compose encrypted post” -> Choose the “File Service” -> Add the files you want, we support various file types -> Click “ Use the file” -> Also you can add the encrypted text -> Finish</p>
@@ -92,8 +92,8 @@
           <div class="faqTitleLine faqMt" id="about-ito"><img src="../assets/faq_chart.png" /><h2>About ITO</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
-              <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
-              <a-icon style="margin-right: 25px;" v-else type="plus" />
+              <a-icon class="icon-space" v-if="props.isActive" type="minus" />
+              <a-icon class="icon-space" v-else type="plus" />
             </template>
             <a-collapse-panel key="1" header="What is ITO (Initial Twitter Offering)" class="collapseTitle">
               <p class="collapseSubTitle">ITO (Initial Twitter Offering) is a decentralized asset offering feature, available on the decentralized blockchain network infrastructure Ethereum, Binance Smart Chain, and Polygon. Users could participate in a token launch directly on Twitter; projects could also reward users or build awareness through ITO by offering their existing tokens with a discount, or simply launch a new token.</p>
@@ -123,8 +123,8 @@
           <div class="faqTitleLine faqMt" id="wallet"><img src="../assets/faq_wallet.png" /><h2>Wallet</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
-              <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
-              <a-icon style="margin-right: 25px;" v-else type="plus" />
+              <a-icon class="icon-space" v-if="props.isActive" type="minus" />
+              <a-icon class="icon-space" v-else type="plus" />
             </template>
             <a-collapse-panel key="1" header="How to create a wallet?" class="collapseTitle">
               <p class="collapseSubTitle">Mask Network will automatically create an Ethereum wallet for you since you create a persona. Or you can create a wallet on the dashboard. Click “Enter the Dashboard” -> “Wallets” -> “Create Wallet” -> Enter Wallet Name -> Choose “ I confirm that i need to create a wallet” -> Click “Import” -> Done!</p>
@@ -140,8 +140,8 @@
           <div class="faqTitleLine faqMt" id="red-packet"><img src="../assets/faq_redpacket.png" /><h2>Red Packet</h2></div>
           <a-collapse default-active-key="1" :bordered="false">
             <template #expandIcon="props">
-              <a-icon style="margin-right: 25px;" v-if="props.isActive" type="minus" />
-              <a-icon style="margin-right: 25px;" v-else type="plus" />
+              <a-icon class="icon-space" v-if="props.isActive" type="minus" />
+              <a-icon class="icon-space" v-else type="plus" />
             </template>
             <a-collapse-panel key="1" header="How to view the history and detail information of the received Red Packet?" class="collapseTitle">
               <p class="collapseSubTitle">Click the blue smiley face on the top right corner. ->Click “Enter the Dashboard” - > “Wallets” -> Choose "Activity" -> InBound, You can see an OutBound list, Select the record you need to view.</p>
@@ -258,6 +258,9 @@ export default {
 .faq {
 	background: white;
 }
+.icon-space {
+  margin-right: 25px;
+}
 .anchor {
   width: 200px;
 }
@@ -365,6 +368,12 @@ export default {
 
 .tutLine + .tutLine {
   margin-top: 40px;
+}
+
+@media screen and (max-width: 844px) {
+  .anchor {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
