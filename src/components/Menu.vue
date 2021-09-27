@@ -4,7 +4,7 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:49:27
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-14 16:02:25
+ * @LastEditTime: 2021-09-27 14:01:00
 -->
 <template>
     <div class="menuContent" :style="{background: transparent?'transparent':'white'}">
@@ -28,7 +28,7 @@
             </md-tab>
         </md-tabs>
         <div v-else style="flex: 1"></div>
-        <div style="margin: 22.5px 0;padding-right: 30px;">
+        <div style="margin: 15px 0;padding-right: 30px;">
             <div v-if="isPc" class="useMask" :class="{blue:!transparent,transparent}">Use Mask</div>
             <md-button v-else class="md-icon-button" @click="menuVisible = !menuVisible">
                 <md-icon :style="{color:transparent?'white':''}">menu</md-icon>

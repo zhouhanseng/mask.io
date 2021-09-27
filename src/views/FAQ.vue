@@ -4,17 +4,17 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:50:19
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-22 13:32:09
+ * @LastEditTime: 2021-09-27 14:05:03
 -->
 <template>
   <div class="faq">
     <Menu />
     <div class="header">
       <div class="header_text" v-if="isPc">
-        <div><span style="font-weight: bold">How can we help you?</span></div>
+        <div><span style="font-weight: bold;">How can we help you?</span></div>
       </div>
       <div class="about_img">
-        <div v-if="!isPc"><span class="text-on-image">How can we help you?</span></div>
+        <div v-if="!isPc" style="text-align:center;width:70%;"><span class="text-on-image">How can we help you?</span></div>
       </div>
     </div>
     <div class="content">
@@ -245,7 +245,7 @@ export default {
 		return {
 			isPc: true,
 			targetOffset: 0,
-      switchFAQ: false,
+			switchFAQ: false,
 		};
 	},
 	mounted() {
@@ -259,10 +259,10 @@ export default {
 	background: white;
 }
 .icon-space {
-  margin-right: 25px;
+	margin-right: 25px;
 }
 .anchor {
-  width: 200px;
+	width: 200px;
 }
 .header {
 	display: flex;
@@ -274,24 +274,24 @@ export default {
 
 .header_text {
 	display: flex;
-  flex: 1;
+	flex: 1;
 	width: 600px;
-  font-size: 64px;
+	font-size: 64px;
 	align-items: center;
 	justify-content: center;
-  text-align: center;
+	text-align: center;
 }
 
 .about_img {
 	height: 651px;
-  width: 50%;
-  background-image: url("../assets/faq_img.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 50%;
+	background-image: url("../assets/faq_img.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .content {
@@ -302,11 +302,11 @@ export default {
 }
 
 .questions {
-  width: auto;
+	width: auto;
 }
 
 .bigTitle {
-  font-weight: bold;
+	font-weight: bold;
 	font-size: 48px;
 	color: #777e90;
 }
@@ -324,14 +324,15 @@ export default {
 	margin-bottom: 56px;
 }
 
-.faqTitleLine > h2, p {
-  font-weight: bold;
-  font-size: 48px;
+.faqTitleLine > h2,
+p {
+	font-weight: bold;
+	font-size: 48px;
 }
 
 .collapseTitle {
 	font-size: 24px;
-  font-weight: bold;
+	font-weight: bold;
 	color: #07080a;
 }
 
@@ -341,7 +342,7 @@ export default {
 
 .collapseSubTitle {
 	font-size: 20px;
-  font-weight: normal;
+	font-weight: normal;
 	color: #777e90;
 	margin-left: 50px;
 	margin-top: 15px;
@@ -362,18 +363,18 @@ export default {
 }
 
 .tutLine {
-  font-size: 20px;
-  color: #07080A;
+	font-size: 20px;
+	color: #07080a;
 }
 
 .tutLine + .tutLine {
-  margin-top: 40px;
+	margin-top: 40px;
 }
 
 @media screen and (max-width: 844px) {
-  .anchor {
-    display: none;
-  }
+	.anchor {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -385,23 +386,24 @@ export default {
 		padding: 0 0;
 	}
 
-  .content {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 120px;
-    margin: 20px;
-  }
-
-	.about_img {
-    width: 100%;
+	.content {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 120px;
+		margin: 20px;
 	}
 
-  .text-on-image {
-    font-weight: bold;
-    font-size: 64px;
-    color: #E6E8EC;
-    text-align: center;
-  }
+	.about_img {
+		width: 100%;
+	}
+
+	.text-on-image {
+		font-weight: bold;
+		font-size: 64px;
+		color: #e6e8ec;
+		text-align: center;
+		text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	}
 }
 
 @media screen and (max-width: 428px) {
@@ -415,6 +417,10 @@ export default {
 
 	.header_text {
 		width: auto;
+	}
+	.text-on-image {
+		font-size: 48px;
+		font-weight: 700;
 	}
 }
 </style>
