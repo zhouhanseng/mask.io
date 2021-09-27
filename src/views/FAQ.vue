@@ -4,17 +4,19 @@
  * @Author: jimmy
  * @Date: 2021-09-12 14:50:19
  * @LastEditors: jimmy
- * @LastEditTime: 2021-09-27 14:07:14
+ * @LastEditTime: 2021-09-27 14:34:07
 -->
 <template>
   <div class="faq">
     <Menu />
     <div class="header">
-      <div class="header_text" v-if="isPc">
+      <div class="header_text about_img" v-if="isPc">
         <div><span style="font-weight: bold;">How can we help you?</span></div>
       </div>
-      <div class="about_img">
-        <div v-if="!isPc" style="text-align:center;width:70%;"><span class="text-on-image">How can we help you?</span></div>
+      <div v-if="!isPc" class="about_img">
+        <span class="text-on-image">How can we help you?</span>
+        <div class="about_blur"></div>
+        <div style="text-align:center;"></div>
       </div>
     </div>
     <div class="content">
@@ -280,6 +282,7 @@ export default {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+  color: #e6e8ec;
 }
 
 .about_img {
@@ -292,6 +295,16 @@ export default {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+}
+.about_blur {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(6px);
 }
 
 .content {
@@ -403,6 +416,7 @@ p {
 		color: #e6e8ec;
 		text-align: center;
 		text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
 	}
 }
 
