@@ -42,8 +42,8 @@
                 <p>WEB 3.0 WAY</p>
               </div>
             </div>
-            <div>
-              <img src="../assets/discover.webp" alt="" srcset="" class="mainImg">
+            <div style="width: 100%">
+              <img style="width: 100%" src="../assets/discover.webp" alt="" srcset="" class="mainImg">
             </div>
           </div>
           <div class="iconList">
@@ -144,7 +144,7 @@
             <p class="centerTitle bottomTitle">Join the Mask Network Community</p>
             <p class="centerSubTitle bottomSubTitle">Mask Network is trusted and supported by an active community of users and contributors. Join us!</p>
           </div>
-          <div class="iconList">
+          <div class="iconList iconlist3">
             <div class="iconBox ic3">
               <div class="iconBoxIcon"><img src="../assets/github.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
               <div class="iconTitle">
@@ -379,7 +379,7 @@ export default {
 }
 .textWidth {
 	width: 620px;
-	margin-top: 60px;
+	margin-top: 30px;
 }
 .textTitle {
 	font-weight: 700;
@@ -473,6 +473,9 @@ export default {
 @media screen and (max-width: 844px){
   .textWidth {
     width: 350px;
+  }
+  .secBoxBody {
+    margin-top: 100px;
   }
 }
 
@@ -619,9 +622,19 @@ export default {
     max-width: 84px;
   }
 
+  .iconlist3 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
   .partImg {
     margin: 20px;
     width: 100px;
+    /* ↑ */
+    /*调研后决定 partner img 尺寸不动*/
+    /*稿子上单个图片宽度为 100*/
+    /*iPhone 12 Pro 的 viewport 宽度为 390*/
+    /*再缩得出事*/
     height: auto;
   }
 }

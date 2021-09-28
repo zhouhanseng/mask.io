@@ -59,7 +59,7 @@
         </div>
         <div class="footerSubtext">I thought what I'd do was, I'd pretend I was one of those deaf-mutes.</div>
         <div class="submitView" v-if="hasSubscript">
-            <div>
+            <div class="news-letter-text">
               <p class="submitTitle">MASK NETWORK Newsletter</p>
               <p class="submitSubTitle">Follow us for more information about MASK</p>
             </div>
@@ -191,6 +191,7 @@ export default {
 	height: 64px;
 	width: 107px;
 	margin: 0;
+  background: #1C68F3;
 }
 .logoView {
 	margin-bottom: 70px;
@@ -224,7 +225,28 @@ export default {
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 844px) {
+  .submitView {
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .submitInput {
+    width: 240px;
+  }
+
+  .news-letter-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  @media screen and (max-width: 768px) {
 	.body {
 		flex-wrap: wrap;
     justify-content: left;
@@ -296,7 +318,7 @@ export default {
 		font-size: 16px;
 	}
 	.submitInput {
-		width: 204px;
+		width: 240px;
 		padding: 19px 21px;
 	}
 	.submitButton {
