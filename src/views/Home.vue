@@ -200,7 +200,7 @@
             </div>
           </div>
           <md-snackbar :md-position="'center'" :md-duration="Infinity" :md-active.sync="showSnackbar" md-persistent>
-            <p>We use cookies to enhance your experience, analyze our traffic, and for security and marketing. By visiting our website you agree to our use of cookies.<span style="color: #0F5DE9;">*Read more about cookies*</span></p>
+            <p style="line-height: 24px">We use cookies to enhance your experience, analyze our traffic, and for security and marketing. By visiting our website you agree to our use of cookies.<span style="color: #0F5DE9;">*Read more about cookies*</span></p>
             <md-button class="md-raised md-primary cookieSubmitButton" @click="showSnackbar = false">I Accept</md-button>
           </md-snackbar>
       </div>
@@ -302,13 +302,16 @@ export default {
 .secBoxBody {
 	margin-top: 200px;
 }
+.secBoxBody > p {
+  font-size: 24px;
+}
 .iconList {
 	display: flex;
 	justify-content: space-between;
 	/* align-items: center; */
 	flex-wrap: wrap;
 	margin: 0 240px;
-	margin-top: 40px;
+	margin-top: 80px;
 }
 .mainImg {
 	width: 700px;
@@ -381,11 +384,14 @@ export default {
 .textTitle {
 	font-weight: 700;
 	font-size: 40px;
+  color: #07080A;
 }
 .textSubTitle {
 	font-weight: 600;
 	font-size: 24px;
 	margin-top: 350px;
+  color: #07080A;
+  line-height: 32px;
 }
 .black {
 	color: #07080a;
@@ -418,9 +424,12 @@ export default {
 	margin: 45px 60px;
 	width: 200px;
 	height: 80px;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .partImg {
+  width: 200px;
 	filter: grayscale(100%);
 	-webkit-transition: -webkit-filter 200ms linear;
 }
