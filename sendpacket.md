@@ -1,0 +1,79 @@
+# Send a Red Packet (Support ETH, BSC and Polygon)
+
+[https://youtu.be/ux583iV6CYQ](https://youtu.be/ux583iV6CYQ)
+
+Click the Mask icon
+
+[https://lh4.googleusercontent.com/1UA_Sus_LnP5LuljxJtcYoAHkRbuxN2pYKFs_s3uqQ1rn-G3FlyVWwSidYiMEMq_siFAem4uog0CUKY9ywef7gGVlzDV0LA5ZfRhbfFmS9wD6mYeicUCSjKk_WBGbEwpgMIJjO_m](https://lh4.googleusercontent.com/1UA_Sus_LnP5LuljxJtcYoAHkRbuxN2pYKFs_s3uqQ1rn-G3FlyVWwSidYiMEMq_siFAem4uog0CUKY9ywef7gGVlzDV0LA5ZfRhbfFmS9wD6mYeicUCSjKk_WBGbEwpgMIJjO_m)
+
+*All screenshots are for reference only*
+
+Click “Red Packet”
+
+[https://lh5.googleusercontent.com/awpMcaw1CAq_dJQnfeYOo8j6WGZ1bK8zJQVRTPc60HJ8O80tuJSV_cXzSLLguqVwD8Fi9j2Z8GQCm1DDDu18oy8LNrz63vrPWif-JcoxOKRcIdM2mN_xRoeJ5zEN64kSWypXQ5eI](https://lh5.googleusercontent.com/awpMcaw1CAq_dJQnfeYOo8j6WGZ1bK8zJQVRTPc60HJ8O80tuJSV_cXzSLLguqVwD8Fi9j2Z8GQCm1DDDu18oy8LNrz63vrPWif-JcoxOKRcIdM2mN_xRoeJ5zEN64kSWypXQ5eI)
+
+*All screenshots are for reference only*
+
+Choose whether you want people to split money in the Red Packet evenly or randomly
+
+[https://lh5.googleusercontent.com/5ysqm-gYVg2w4Mbd4tCKnk87cw3zCSR2cDNnFQmqj4-81Uf8bcFVCANoTxX6h_Ibm5799Q00glDKTQB_lrU-r6W3SFhd3yil_E0uEKWTCSGW91ig8owYZFBGxKjvw91-XM-kb_kc](https://lh5.googleusercontent.com/5ysqm-gYVg2w4Mbd4tCKnk87cw3zCSR2cDNnFQmqj4-81Uf8bcFVCANoTxX6h_Ibm5799Q00glDKTQB_lrU-r6W3SFhd3yil_E0uEKWTCSGW91ig8owYZFBGxKjvw91-XM-kb_kc)
+
+*All screenshots are for reference only*
+
+Type in the number of shares you want to send the Red Packet
+
+[https://lh5.googleusercontent.com/bidlrP_63M94OSLVnp18STT_gcdS_w9iWH5cM7xgXe5xCpMt0ol3gLkestVoSO_NASPAwA3VEpBiz9vdsc6XrZmA10PGDzlN879SoIfk4BBAhQccWWH_eoxyDXQhF7gEufznJuHb](https://lh5.googleusercontent.com/bidlrP_63M94OSLVnp18STT_gcdS_w9iWH5cM7xgXe5xCpMt0ol3gLkestVoSO_NASPAwA3VEpBiz9vdsc6XrZmA10PGDzlN879SoIfk4BBAhQccWWH_eoxyDXQhF7gEufznJuHb)
+
+*All screenshots are for reference only*
+
+If you selected “Average” previously, type in the amount and which token you want each person to receive
+
+[https://lh4.googleusercontent.com/3Mqp26bzSF2zqEiUhExWKFgS_b57poUE_N8crLJ3-f4MCF_cTiUI71oMPohmrJMYGhOQK47EPcpl6ZRo2_dHMKV3eXmuvWo88KoJAap__Fdj7jJRoskytCJPB0sONf0ZjJrsItIa](https://lh4.googleusercontent.com/3Mqp26bzSF2zqEiUhExWKFgS_b57poUE_N8crLJ3-f4MCF_cTiUI71oMPohmrJMYGhOQK47EPcpl6ZRo2_dHMKV3eXmuvWo88KoJAap__Fdj7jJRoskytCJPB0sONf0ZjJrsItIa)
+
+*All screenshots are for reference only*
+
+If you selected “Random” previously, type in the total amount you would like to send
+
+[https://lh5.googleusercontent.com/vSjrNr4Uylvf-8QIpl3ugtdSccXmQyNwKka29sY0GWoye6NBXqtTkP7NoMaElYG8sFBFJb9WvI-S8l4etNQgItC7a16OSB0aZAOl7_oOGnBj585Bc7cBFJLwbsdYAnfuanvUXjE8](https://lh5.googleusercontent.com/vSjrNr4Uylvf-8QIpl3ugtdSccXmQyNwKka29sY0GWoye6NBXqtTkP7NoMaElYG8sFBFJb9WvI-S8l4etNQgItC7a16OSB0aZAOl7_oOGnBj585Bc7cBFJLwbsdYAnfuanvUXjE8)
+
+*All screenshots are for reference only*
+
+You can type the attached messages
+
+[https://lh6.googleusercontent.com/u-U35ewgSVrzlNQvpcuzl89z6HRGWvGvDTkRXLp3p7bJFM8zHtiQVW5MF_Oggo5BRVs1QXtyjjZ_7VrNX_mcjAEUNCZLeizmms3YGrj72Z-AF9pV6CB4pUJJQbumn2G_CD3DdZ1i](https://lh6.googleusercontent.com/u-U35ewgSVrzlNQvpcuzl89z6HRGWvGvDTkRXLp3p7bJFM8zHtiQVW5MF_Oggo5BRVs1QXtyjjZ_7VrNX_mcjAEUNCZLeizmms3YGrj72Z-AF9pV6CB4pUJJQbumn2G_CD3DdZ1i)
+
+*All screenshots are for reference only*
+
+Click「Send xxxx」
+
+[https://lh5.googleusercontent.com/QFTItuS8O8VbskPyWUdvTopCQG0jC_2sXEzsJZJUpPcfSTlAhEShT0V16iv5yravoSJ9BpLwyB_teNlk32B9ZG5J7rVariir7Sc6in1Hcc__x_BeEw0_FPlydtrVgcuP1CB1Fa51](https://lh5.googleusercontent.com/QFTItuS8O8VbskPyWUdvTopCQG0jC_2sXEzsJZJUpPcfSTlAhEShT0V16iv5yravoSJ9BpLwyB_teNlk32B9ZG5J7rVariir7Sc6in1Hcc__x_BeEw0_FPlydtrVgcuP1CB1Fa51)
+
+*All screenshots are for reference only*
+
+Waiting for your transaction to be confirmed
+
+[https://lh6.googleusercontent.com/vet1UUGSwAWdrf2AOv2Y0sWujeuyNIU4k6boG8pLYYEzXpImg72uRAy5Fg9ZG3jE75rBcnEPk7szfCOU5nr97moEhEvWdbJkuhONuZSdyFBX2UnZbW4-o-7pYghEmFe7zmFSbqDW](https://lh6.googleusercontent.com/vet1UUGSwAWdrf2AOv2Y0sWujeuyNIU4k6boG8pLYYEzXpImg72uRAy5Fg9ZG3jE75rBcnEPk7szfCOU5nr97moEhEvWdbJkuhONuZSdyFBX2UnZbW4-o-7pYghEmFe7zmFSbqDW)
+
+*All screenshots are for reference only*
+
+[https://lh5.googleusercontent.com/dgoU_x3kYew8pWkAmKrSuMSfoNlY52QUnF0Y287b-lQY4Te1o7UWB6anpkF98tZsCabwhgJpqH13sYovW5iYdqvNBC2c871Tw1JO8pZzs_tK289-TP4R2uY38wDVxeb-jgtD0x_K](https://lh5.googleusercontent.com/dgoU_x3kYew8pWkAmKrSuMSfoNlY52QUnF0Y287b-lQY4Te1o7UWB6anpkF98tZsCabwhgJpqH13sYovW5iYdqvNBC2c871Tw1JO8pZzs_tK289-TP4R2uY38wDVxeb-jgtD0x_K)
+
+*All screenshots are for reference only*
+
+In the redirected window, click “Finish”
+
+[https://lh5.googleusercontent.com/_O-fY5XPw1TNSDraTTGj2dNLD3dcYZ_I_NCq6pOAybdfY4wtrj7OurQDVvMtbgUCVjNFviMIJFPvLzGTtHaEPdaYtb21gAmxcExltyjsZllifGMeLlRqs1SrsUsw1LmAG0dYoNyn](https://lh5.googleusercontent.com/_O-fY5XPw1TNSDraTTGj2dNLD3dcYZ_I_NCq6pOAybdfY4wtrj7OurQDVvMtbgUCVjNFviMIJFPvLzGTtHaEPdaYtb21gAmxcExltyjsZllifGMeLlRqs1SrsUsw1LmAG0dYoNyn)
+
+*All screenshots are for reference only*
+
+The Red Packet is now encrypted, click “Tweet” to send
+
+[https://lh3.googleusercontent.com/ruthRSNy1knd61JLrm2l6I8PZVSWfhlZ_eVY0CN5z4b2DpqEClVcV88m5mUX2374bR-pd--_4_fJ9LvRemY1C3N9KYCwXIHLoc3y40RpbHXGT-3Ryq3MuaSqSTiR0-BnD_tWMmYa](https://lh3.googleusercontent.com/ruthRSNy1knd61JLrm2l6I8PZVSWfhlZ_eVY0CN5z4b2DpqEClVcV88m5mUX2374bR-pd--_4_fJ9LvRemY1C3N9KYCwXIHLoc3y40RpbHXGT-3Ryq3MuaSqSTiR0-BnD_tWMmYa)
+
+*All screenshots are for reference only*
+
+You have successfully sent the Red Packet!
+
+[https://lh6.googleusercontent.com/pKHNaLFODDsrkjHeNzuLc8wS8jNb8dE2GB_k4Ms4elKrOzPfNmOMHR_mzXsg34LTUVz8QNB8wGyEd14q25OIAGjbZhYjY6uLD_30jKV75T8WdTs3iCJ4IEJCzIOwBvIlIb3c4GfY](https://lh6.googleusercontent.com/pKHNaLFODDsrkjHeNzuLc8wS8jNb8dE2GB_k4Ms4elKrOzPfNmOMHR_mzXsg34LTUVz8QNB8wGyEd14q25OIAGjbZhYjY6uLD_30jKV75T8WdTs3iCJ4IEJCzIOwBvIlIb3c4GfY)
+
+*All screenshots are for reference only*

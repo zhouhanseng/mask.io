@@ -1,0 +1,29 @@
+# Claim tokens (from ITO/Airdrop) (Support ETH only, Polygon soon)
+
+1）Click “Mask Network” on the left side of the page
+
+[https://lh3.googleusercontent.com/P9Vp50UIuG6XHkIevP6GsPNFZhoKykKTMySOi0538j9gM0Lp6a39qDmCpmtMaB6Ns7XdrcYEJj-T9Izoa0ODFYpHPG9LG67jTfzEMILrz6hvuxxdOhEtr2CZHmR62t62FghR8uaV](https://lh3.googleusercontent.com/P9Vp50UIuG6XHkIevP6GsPNFZhoKykKTMySOi0538j9gM0Lp6a39qDmCpmtMaB6Ns7XdrcYEJj-T9Izoa0ODFYpHPG9LG67jTfzEMILrz6hvuxxdOhEtr2CZHmR62t62FghR8uaV)
+
+All screenshots are for reference only
+
+2) Click “Claim” in the pop-up menu and pop-up window
+
+[https://lh3.googleusercontent.com/_m8LFKoRM3GvRw5GeADXTDiWsOpGmOktd18kH5Kwd2lq0c69x2KrxEbsVMQml2aneTTHDhLogU36vGYCao0jK6Ezm1hQwOqWXzUqqy9dzRuYAdrJfi66TL0q0LMqAwCge1cZ9is4](https://lh3.googleusercontent.com/_m8LFKoRM3GvRw5GeADXTDiWsOpGmOktd18kH5Kwd2lq0c69x2KrxEbsVMQml2aneTTHDhLogU36vGYCao0jK6Ezm1hQwOqWXzUqqy9dzRuYAdrJfi66TL0q0LMqAwCge1cZ9is4)
+
+All screenshots are for reference only
+
+[https://lh3.googleusercontent.com/tpuVDGClMH8b6idlBRaUt8fsORsgAe3FiHpXXbIwx-ib-_3oLm2TIR8OLrKNKQqQhpkapCcxXTxHEiU1Fwhd6QMx5VkJJe-VS4N72DuqY6hfHKujISOSpjn0kZGGRedZn0lDZK4A](https://lh3.googleusercontent.com/tpuVDGClMH8b6idlBRaUt8fsORsgAe3FiHpXXbIwx-ib-_3oLm2TIR8OLrKNKQqQhpkapCcxXTxHEiU1Fwhd6QMx5VkJJe-VS4N72DuqY6hfHKujISOSpjn0kZGGRedZn0lDZK4A)
+
+All screenshots are for reference only
+
+3) The transaction will automatically begin, you will see a confirmation window once the transaction is confirmed
+
+- Gas fee and transaction fee applies
+
+[https://lh3.googleusercontent.com/KnxE-zqS422ea4fpWHciGv3Wg-V-tyaVYzEwofuTVdvtvL7fXdndtOcupPGG0QO8E2r2EzH0i7E3tKEDptPQ4NzHRBUbW1wK8JkLzOoY22Utojt2GRI1JysGFxbnAXwPSci5d6H8](https://lh3.googleusercontent.com/KnxE-zqS422ea4fpWHciGv3Wg-V-tyaVYzEwofuTVdvtvL7fXdndtOcupPGG0QO8E2r2EzH0i7E3tKEDptPQ4NzHRBUbW1wK8JkLzOoY22Utojt2GRI1JysGFxbnAXwPSci5d6H8)
+
+All screenshots are for reference only
+
+[https://lh4.googleusercontent.com/p88-p8aIvB8UF6pXdyILhraXUOI3nyTYWqqmWV4TnXV12XsAtOvmpON7z7-lLkHQIzVO01TxoPdg0vO2SdfVWXLxguh53lpyzJrVMDU6udg880PxejVTfRIp_Wk-zJVFBKrMQpUd](https://lh4.googleusercontent.com/p88-p8aIvB8UF6pXdyILhraXUOI3nyTYWqqmWV4TnXV12XsAtOvmpON7z7-lLkHQIzVO01TxoPdg0vO2SdfVWXLxguh53lpyzJrVMDU6udg880PxejVTfRIp_Wk-zJVFBKrMQpUd)
+
+All screenshots are for reference only
