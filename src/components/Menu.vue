@@ -17,13 +17,13 @@
             <md-tab id="tab-home" md-label="Home" to="/">
               <router-view></router-view>
             </md-tab>
-            <md-tab id="tab-news" md-label="News"></md-tab>
+            <md-tab id="tab-news" md-label="News" to="/news"></md-tab>
             <md-tab id="tab-community" md-label="Community"></md-tab>
             <md-tab id="tab-help" md-label="Help" to="/faq">
               <router-view></router-view>
             </md-tab>
-            <md-tab id="tab-docs" md-label="Docs"></md-tab>
-            <md-tab id="tab-about" md-label="About" to="about">
+            <md-tab id="tab-docs" md-label="Docs" to="https://app.gitbook.com/@kan-1/s/mask-network/"></md-tab>
+            <md-tab id="tab-about" md-label="About" to="/about">
               <router-view></router-view>
             </md-tab>
         </md-tabs>
@@ -36,39 +36,38 @@
                 </md-button>
             </template>
         </div>
-        <md-drawer v-if="!isPc" :md-active.sync="menuVisible" :md-left="true" :md-fixed="true">
-            <md-toolbar class="md-transparent" md-elevation="0">Mask</md-toolbar>
+        <md-drawer v-if="!isPc" :md-active.sync="menuVisible" :md-left="true" :md-fixed="true">  
             <md-list>
                 <md-list-item>
                     <!-- <md-icon>Home</md-icon> -->
-                    <span class="md-list-item-text">Home</span>
+                    <a class="md-list-item-text" href="/">Home</a>
                 </md-list-item>
 
                 <md-list-item>
                     <!-- <md-icon>send</md-icon> -->
-                    <span class="md-list-item-text">News</span>
+                    <a class="md-list-item-text" href="/news">News</a>
                 </md-list-item>
 
                 <md-list-item>
                     <!-- <md-icon>delete</md-icon> -->
-                    <span class="md-list-item-text">Community</span>
+                    <a class="md-list-item-text">Community</a>
                 </md-list-item>
 
                 <md-list-item>
                     <!-- <md-icon>error</md-icon> -->
-                    <span class="md-list-item-text">Help</span>
+                    <a class="md-list-item-text" href="/faq">Help</a>
                 </md-list-item>
                 <md-list-item>
                     <!-- <md-icon>error</md-icon> -->
-                    <span class="md-list-item-text">Docs</span>
+                    <a class="md-list-item-text" href="https://app.gitbook.com/@kan-1/s/mask-network/">Docs</a>
                 </md-list-item>
                 <md-list-item>
                     <!-- <md-icon>error</md-icon> -->
-                    <span class="md-list-item-text">About</span>
+                    <a class="md-list-item-text" href="/about">About</a>
                 </md-list-item>
                 <md-list-item>
                     <template v-if="showDownload">
-                        <span class="md-list-item-text">Use Mask</span>
+                        <a class="md-list-item-text" href="/download">Use Mask</a>
                     </template>
                 </md-list-item> 
             </md-list>
@@ -111,7 +110,6 @@ export default {
 	display: flex;
 	align-items: center;
     position: relative;
-    z-index: 2;
 }
 .useMask {
 	padding: 11px 20px;
@@ -125,5 +123,8 @@ export default {
 	background: transparent;
     border: 1px solid white;
 	color: white;
+}
+.md-list-item-text {
+    color: rgba(0, 0, 0, 0.87) !important
 }
 </style>
