@@ -18,7 +18,7 @@
               <router-view></router-view>
             </md-tab>
             <md-tab id="tab-news" md-label="News" to="/news"></md-tab>
-            <md-tab id="tab-community" md-label="Community"></md-tab>
+            <md-tab id="tab-community" md-label="Community" to="https://we.mask.io/"></md-tab>
             <md-tab id="tab-help" md-label="Help" to="/faq">
               <router-view></router-view>
             </md-tab>
@@ -50,7 +50,7 @@
 
                 <md-list-item>
                     <!-- <md-icon>delete</md-icon> -->
-                    <a class="md-list-item-text">Community</a>
+                    <a class="md-list-item-text" href="https://we.mask.io/">Community</a>
                 </md-list-item>
 
                 <md-list-item>
