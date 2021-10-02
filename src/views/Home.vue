@@ -11,7 +11,7 @@
     <!-- 顶部菜单组件，是否通用随意。 -->
     <!-- 注意在移动端下菜单收到右侧菜单里，建议考虑采用 vue3-material 的 appbar -->
     <!-- 弹出的 cookie 应该是 snackbar -->
-    <Menu blue-logo="false" transparent />
+    <Menu v-bind:blue-logo="false" transparent />
     <!-- 这里应有一吨 Flex 布局 -->
     <div>
       <div v-if="isPc">
@@ -205,7 +205,7 @@
           </md-snackbar>
       </div>
     </div>
-    <Footer has-subscript="true" />
+    <Footer v-bind:has-subscript="true" />
     <!-- 底部深蓝色通用页脚 -->
   </div>
 </template>
