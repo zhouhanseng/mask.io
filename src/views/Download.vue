@@ -14,17 +14,17 @@
         <h1>Chrome / Edge</h1>
         <span>Status: stable</span>
         <img src="../assets/icon_chrome.webp"/>
-        <div class="store-button">
+        <a class="store-button" href="https://chrome.google.com/webstore/detail/mask-network/jkoeaghipilijlahjplgbfiocjhldnap" target="_blank">
           <span>Chrome Web Store</span>
-        </div>
+        </a>
       </div>
       <div class="store-item store-space">
         <h1>FireFox</h1>
         <span>Status: stable</span>
         <img src="../assets/icon_firefox.webp"/>
-        <div class="store-button">
+        <a class="store-button" href="https://addons.mozilla.org/en-US/firefox/addon/maskbook/" target="_blank">
           <span>ADD-Ons Store</span>
-        </div>
+        </a>
       </div>
     </div>
     <div class="app-content">
@@ -36,8 +36,12 @@
         </div>
 
         <div style="margin-top: 40px">
-          <img class="btn-white" style="margin-right: 40px" src="../assets/btn_apple.svg"/>
-          <img class="btn-white" src="../assets/btn_play.svg"/>
+          <a href="https://apps.apple.com/app/id1478382964" target="_blank">
+            <img class="btn-white" style="margin-right: 40px" src="../assets/btn_apple.svg" />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.dimension.maskbook" target="_blank">
+            <img class="btn-white" src="../assets/btn_play.svg"/>
+          </a>
         </div>
 
       </div>
@@ -50,9 +54,9 @@
         <span>Status: Public Beta Test</span>
       </div>
 
-      <div class="apk-button">
+      <a class="apk-button" href="https://github.com/DimensionDev/Mask-Android-Release/releases/download/1.34.0/app-release.apk" target="_blank">
         <span>Github Release</span>
-      </div>
+      </a>
     </div>
   </div>
   <Footer/>
@@ -121,44 +125,20 @@ export default {
   align-items: center;
 }
 
-.store-space {
-
-}
-
 .store-button {
   width: 180px;
   height: 56px;
   display: flex;
   justify-content: center;
+  text-decoration: none !important;
   align-items: center;
   background: #1B1B1B;
   border-radius: 8px;
+  cursor: pointer;
 }
 
-.store-button > span {
+.store-button span {
   color: white;
-}
-
-.apk-button:hover,
-.store-button:hover {
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  background: #ffffffcf;
-}
-.btn-white:hover {
-  border-radius: 8px;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  background: white;
-}
-
-.apk-button:hover > span,
-.store-button:hover > span {
-  color: #1B1B1B;
 }
 
 .app-content {
@@ -193,10 +173,6 @@ export default {
   margin-top: 32px;
 }
 
-.btn-white {
-
-}
-
 .apk-content {
   display: flex;
   flex-direction: column;
@@ -223,8 +199,10 @@ export default {
   height: 56px;
   display: flex;
   align-items: center;
+  text-decoration: none !important;  
   justify-content: center;
   margin-top: 12px;
+  cursor: pointer;  
 }
 
 .apk-button > span {
