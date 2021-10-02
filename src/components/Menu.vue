@@ -35,6 +35,7 @@
                     <md-icon :style="{color:transparent?'white':''}">menu</md-icon>
                 </md-button>
             </template>
+            <template v-else><div class="emptyDiv"></div></template>
         </div>
         <md-drawer v-if="!isPc" :md-active.sync="menuVisible" :md-left="true" :md-fixed="true">  
             <md-list>
@@ -123,6 +124,9 @@ export default {
 	background: transparent;
     border: 1px solid white;
 	color: white;
+}
+.emptyDiv{ 
+    height: 48px;
 }
 .md-list-item-text {
     color: rgba(0, 0, 0, 0.87) !important
