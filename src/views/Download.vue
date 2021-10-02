@@ -1,6 +1,6 @@
 <template>
 <div class="download">
-  <Menu/>
+  <Menu v-bind:show-download="false" />
   <div class="header">
     <div class="title">
       <h1>Mask welcome your use!</h1>

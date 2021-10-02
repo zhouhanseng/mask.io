@@ -29,12 +29,14 @@
         </md-tabs>
         <div v-else style="flex: 1"></div>
         <div style="margin: 15px 0;padding-right: 30px;">
-            <div v-if="isPc" class="useMask" :class="{blue:!transparent,transparent}">Use Mask</div>
-            <md-button v-else class="md-icon-button" @click="menuVisible = !menuVisible">
-                <md-icon :style="{color:transparent?'white':''}">menu</md-icon>
-            </md-button>
+            <template v-if="showDownload">
+                <md-button v-if="isPc" class="useMask" :class="{blue:!transparent,transparent}" href="/download">Use Mask</md-button>
+                <md-button v-else class="md-icon-button" @click="menuVisible = !menuVisible">
+                    <md-icon :style="{color:transparent?'white':''}">menu</md-icon>
+                </md-button>
+            </template>
         </div>
-        <md-drawer v-if="!isPc" :md-active.sync="menuVisible" :md-right="true" :md-fixed="true">
+        <md-drawer v-if="!isPc" :md-active.sync="menuVisible" :md-left="true" :md-fixed="true">
             <md-toolbar class="md-transparent" md-elevation="0">Mask</md-toolbar>
             <md-list>
                 <md-list-item>
@@ -64,6 +66,11 @@
                     <!-- <md-icon>error</md-icon> -->
                     <span class="md-list-item-text">About</span>
                 </md-list-item>
+                <md-list-item>
+                    <template v-if="showDownload">
+                        <span class="md-list-item-text">Use Mask</span>
+                    </template>
+                </md-list-item> 
             </md-list>
       </md-drawer>
     </div>
@@ -77,10 +84,14 @@ export default {
 			type: Boolean,
 			default: false,
 		},
-    blueLogo: {
-      type: Boolean,
-      default: true,
-    }
+        blueLogo: {
+            type: Boolean,
+            default: true,
+        },
+        showDownload: {
+            type: Boolean,
+            default: true,
+        },
 	},
 	data: () => {
 		return {
