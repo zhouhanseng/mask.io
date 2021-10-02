@@ -18,7 +18,7 @@
               <router-view></router-view>
             </md-tab>
             <md-tab id="tab-news" md-label="News" to="/news"></md-tab>
-            <md-tab id="tab-community" md-label="Community" to="https://we.mask.io/"></md-tab>
+            <md-tab id="tab-community" md-label="Community" href="https://we.mask.io/"></md-tab>
             <md-tab id="tab-help" md-label="Help" to="/faq">
               <router-view></router-view>
             </md-tab>
