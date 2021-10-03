@@ -63,10 +63,16 @@
               <p class="submitTitle">MASK NETWORK Newsletter</p>
               <p class="submitSubTitle">Follow us for more information about MASK</p>
             </div>
-            <div class="submitClickView">
-              <input class="submitInput" type="text" placeholder="Please input your email address" />
-              <md-button class="md-raised md-primary submitButton">submit</md-button>
-            </div>
+            <form
+							class="submitClickView"
+							name="subscription" 
+							method="post"
+							target="_blank"
+							novalidate
+							action="https://dimension.us20.list-manage.com/subscribe/post?u=bd44f8df98ab3d8daf8bbe020&amp;id=d23c8870f6">
+              <input name="EMAIL" class="submitInput" type="email" placeholder="Please input your email address" />
+              <md-button class="md-raised md-primary submitButton" type="submit">submit</md-button>
+            </form>
           </div>
     </div>
 </template>
@@ -181,6 +187,8 @@ export default {
 }
 .submitInput {
 	background: #ffffff;
+	color: #0b0034;
+  outline: none;	
 	box-shadow: 0px 8px 8px rgba(27, 104, 242, 0.1);
 	padding: 24px 0 24px 20px;
 	border: none;
@@ -188,8 +196,10 @@ export default {
 }
 .submitButton {
 	/* padding: 20px 0; */
-	height: 64px;
+	height: 65px;
 	width: 107px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;	
 	margin: 0;
   background: #1C68F3;
 }
