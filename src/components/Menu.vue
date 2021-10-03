@@ -9,9 +9,9 @@
 <template>
     <div class="menuContent" :style="{background: transparent?'transparent':'white'}">
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-        <div style="padding-left: 30px;">
-          <img v-if="blueLogo === true" src="../assets/logo_blue.png" alt="" style="width: 137px;">
-          <img v-else src="../assets/logo.webp" alt="" style="width: 137px;">
+        <div style="padding-left: 30px; z-index: 2">
+          <img v-if="blueLogo === true" src="../assets/logo_blue.png" alt="" :style="isPc ? 'width: 137px;' : 'width: 107px;'">
+          <img v-else src="../assets/logo.webp" alt="" :style="isPc ? 'width: 137px;' : 'width: 107px;'">
         </div>
         <md-tabs md-sync-route v-if="isPc" md-alignment="centered" style="flex: 1;" :class="{'md-transparent': transparent, 'md-accent': transparent}">
             <md-tab id="tab-home" md-label="Home" to="/">
@@ -28,7 +28,7 @@
             </md-tab>
         </md-tabs>
         <div v-else style="flex: 1"></div>
-        <div style="margin: 15px 0;padding-right: 30px;">
+        <div style="margin: 15px 0; padding-right: 30px;">
             <template v-if="showDownload">
                 <md-button v-if="isPc" class="useMask" :class="{blue:!transparent,transparent}" href="/download">Use Mask</md-button>
                 <md-button v-else class="md-icon-button" @click="menuVisible = !menuVisible">
@@ -37,7 +37,7 @@
             </template>
             <template v-else><div class="emptyDiv"></div></template>
         </div>
-        <md-drawer v-if="!isPc" :md-active.sync="menuVisible" :md-left="true" :md-fixed="true">  
+        <md-drawer v-if="!isPc" :md-active.sync="menuVisible" :md-left="true" :md-fixed="true" style="maxWidth: 240px">  
             <md-list>
                 <md-list-item>
                     <!-- <md-icon>Home</md-icon> -->
@@ -125,7 +125,7 @@ export default {
     border: 1px solid white;
 	color: white;
 }
-.emptyDiv{ 
+.emptyDiv { 
     height: 48px;
 }
 .md-list-item-text {

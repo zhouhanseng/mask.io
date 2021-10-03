@@ -76,8 +76,6 @@ export default {
   justify-content: center;
   padding: 120px 33%;
 }
-.showdown {
-}
 
 .font-title {
   font-style: normal;

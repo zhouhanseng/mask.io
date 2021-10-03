@@ -45,10 +45,10 @@
                     </div>
                 </div>
                 <div class="Community">
-                    <div class="title">Community</div>
+                    <div class="title title2">Community</div>
                     <div class="commun">
                         <div class="navBox"><a href="https://www.facebook.com/masknetwork" target="_blank"><img src="../assets/nav-1.webp" style="width: 12px;"></a></div>
-                        <div class="navBox"><a href="https://twitter.com/realmaskbook" target="_blank"><img src="../assets/nav-2.webp" style="width: 21px;"></a></div>
+                        <div class="navBox"><a href="https://twitter.com/realMaskNetwork" target="_blank"><img src="../assets/nav-2.webp" style="width: 21px;"></a></div>
                         <div class="navBox"><a href="https://discord.gg/4SVXvj7" target="_blank"><img src="../assets/nav-3.webp" style="width: 21px;"></a></div>
                         <div class="navBox"><a href="https://t.me/maskbook_group#telegram" target="_blank"><img src="../assets/nav-4.webp" style="width: 19px;"></a></div>
                         <div class="navBox"><a href="https://github.com/DimensionDev" target="_blank"><img src="../assets/nav-5.webp" style="width: 18px;"></a></div>
@@ -137,6 +137,9 @@ export default {
 	font-weight: 500;
 	font-size: 24px;
 	margin-bottom: 70px;
+}
+.list {
+	font-size: 16px;
 }
 .list > div + div {
 	margin-top: 40px;
@@ -236,14 +239,6 @@ export default {
 	cursor: pointer;
 }
 
-.navBox:hover {
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-	transition: all 0.2s linear;
-	background-color: rgba(255, 255, 255, 0.4);
-}
-
 @media screen and (max-width: 844px) {
   .submitView {
     width: auto;
@@ -307,8 +302,8 @@ export default {
 
 @media screen and (max-width: 428px) {
 	.body {
-		padding-bottom: 40px;
-		padding-top: 30px;
+		padding-bottom: 20px;
+		padding-top: 0px;
 	}
 	.leftBox {
 		margin: 24px;
@@ -323,9 +318,14 @@ export default {
 	.naviBox > div + div {
 		margin-left: 40px;
 	}
+	.Community, .commun {
+		width: 100%;
+	}
+	.commun {
+		justify-content: space-between;
+	}
 	.commun > div {
-		margin-left: 10px;
-		margin-top: 20px;
+		margin: 0px;
 	}
 	.submitView {
 		width: calc(100%);
@@ -344,10 +344,21 @@ export default {
 		height: 53px;
 	}
 	.footerSubtext {
+		color: #fff;
 		margin: 0 24px;
 		font-size: 14px;
 		font-weight: 700;
+		line-height: 1.5;
 		text-align: start;
 	}
+	.title {
+		margin-bottom: 40px;
+	}
+	.title2 {
+		margin-bottom: 70px;
+	}	
+	.logoView {
+		margin-bottom: 40px;
+	}	
 }
 </style>

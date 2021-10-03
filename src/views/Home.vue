@@ -23,7 +23,7 @@
       <div>
           <div class="mainBox">
             <div>
-              <p class="mainTitle black" style="margin-bottom: 50px;">What is Mask?</p>
+              <p class="mainTitle mainTitle1 black">What is Mask?</p>
               <p class="subTitle black">The bridge between the Web 2.0 and Web 3.0.</p>
               <p class="subTitle black">The defenders to data autonomy.</p>
             </div>
@@ -34,7 +34,7 @@
           <div class="secView">
             <div class="secBox">
               <div>
-                <p class="mainTitle white" style="text-align: left;">Discover</p>
+                <p class="mainTitle mainTitle2 white" style="text-align: left;">Discover</p>
               </div>
               <div class="secBoxBody white">
                 <p>INTERACT WITH FRIENDS ON SOCIAL MEDIA</p>
@@ -43,7 +43,7 @@
               </div>
             </div>
             <div style="width: 100%">
-              <img style="width: 100%" src="../assets/discover.webp" alt="" srcset="" class="mainImg">
+              <img style="width: 100%" src="../assets/discover.webp" alt="" srcset="" class="mainImg mainImg1">
             </div>
           </div>
           <div class="iconList">
@@ -157,7 +157,7 @@
             </div>
             <div class="iconBox ic3">
               <div class="iconBoxIcon"><img src="../assets/Menu.webp" alt="" srcset="" style="width: 48px;height: 48px"></div>
-              <div class="iconTitle">
+              <div class="iconTitle nowrapText">
                 <p>Mask Snapshot</p>
               </div>
             </div>
@@ -350,13 +350,14 @@ export default {
 	line-height: 50px;
 	font-weight: 700;
 }
+.mainTitle1 {
+	margin-bottom: 50px;
+}
 .subTitle {
 	font-size: 32px;
 	font-weight: 700;
-}
-.subTitle + .subTitle {
 	margin-top: 40px;
-  line-height: 24px;
+  line-height: 24px;	
 }
 .centerTitle {
 	color: #0b0034;
@@ -366,6 +367,7 @@ export default {
 }
 .centerSubTitle {
 	color: #777e90;
+	font-weight: 600;
 	font-size: 24px;
 	line-height: 20px;
 	margin: 0;
@@ -438,6 +440,9 @@ export default {
 	filter: grayscale(100%);
 	-webkit-transition: -webkit-filter 200ms linear;
 }
+.nowrapText{
+	white-space: nowrap;
+}
 .partImg:hover {
 	filter: none;
 }
@@ -461,6 +466,7 @@ export default {
 	}
 	.subTitle {
 		font-size: 28px;
+		margin-top: 30px;
 		font-weight: 700;
 	}
 	.secBox {
@@ -482,9 +488,20 @@ export default {
   .secBoxBody {
     margin-top: 100px;
   }
+	.subTitle {
+		font-size: 24px;
+		font-weight: 700;
+		margin-top: 20px
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.centerView{
+		margin-bottom: 40px;		
+	}
+	.centerTitle {
+		margin-bottom: 40px;
+	}	
 	.bgImgView {
 		display: flex;
 		align-items: center;
@@ -503,7 +520,12 @@ export default {
 		text-align: center;
 	}
 	.subTitle {
+		font-size: 20px;		
 		text-align: center;
+		margin-top: 15px;
+	}	
+	.mainImg1 {
+		margin-top: 20px;
 	}
 	.secView {
 		margin: 0 34px;
@@ -551,6 +573,10 @@ export default {
 }
 
 @media screen and (max-width: 428px) {
+	.centerView{
+		margin-bottom: 20px;		
+		margin-top: 20px;		
+	}	
 	.headImgView {
 		height: 812px;
 	}
@@ -565,10 +591,22 @@ export default {
 	.mainBox {
 		padding: 40px 0;
 	}
+	.mainBoxImg {
+		margin-top: 20px;
+	}
+	.centerTitle {
+		margin-bottom: 20px;
+	}		
 	.mainTitle {
 		font-size: 40px;
 		text-align: center;
 	}
+	.mainTitle1 {
+		margin-bottom: 20px;
+	}	
+	.textWidth {
+		margin-top: 10px;
+	}	
 	.secView {
 		margin: 0 12px;
 	}
@@ -595,20 +633,22 @@ export default {
 		margin-top: 60px;
 	}
 	.bottomTitle {
-		font-size: 24px;
-		margin: 30px 50px;
+		font-size: 35px;
+		margin: 30px 20px;
 	}
 	.bottomSubTitle {
 		font-size: 16px;
 		margin: 30px 30px;
 	}
 	.mainImg {
-		width: 350px;
-		/* height: 450px; */
+		width: 100%;
+		margin-bottom: 10px;
 	}
 	.subTitle {
+		font-size: 16px;				
 		text-align: center;
-	}
+		margin-top: 5px;
+	}		
 	.iconTitle {
 		font-size: 14px;
 	}
@@ -618,10 +658,11 @@ export default {
   .iconBox {
     min-width: 120px;
     max-width: 120px;
+		margin-top: 20px;
+		margin-bottom: 20px;
     margin-left: 0;
     margin-right: 0;
   }
-
   .ic3 {
     min-width: 84px;
     max-width: 84px;
@@ -631,6 +672,16 @@ export default {
     margin-left: 30px;
     margin-right: 30px;
   }
+
+	.partnerView {
+		margin-top: 20px;
+		margin-bottom: 40px;
+		padding: 50px 0px;
+	}
+
+	.partnerView .title {
+		margin-bottom: 30px;
+	}	
 
   .partImg {
     margin: 20px;
