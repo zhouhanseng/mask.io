@@ -42,8 +42,8 @@
                 <p>WEB 3.0 WAY</p>
               </div>
             </div>
-            <div style="width: 100%">
-              <img style="width: 100%" src="../assets/discover.webp" alt="" srcset="" class="mainImg mainImg1">
+            <div class="discoverBox">
+              <img src="../assets/discover.webp" alt="" srcset="" class="mainImg mainImg1">
             </div>
           </div>
           <div class="iconList">
@@ -300,9 +300,12 @@ export default {
 .secBox {
 	background: linear-gradient(180deg, #c1190f 0%, #dd615a 100%);
 	padding: 60px;
-	width: 740px;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
+}
+.discoverBox {
+	width: 40%;
 }
 .secBoxBody {
 	margin-top: 200px;
@@ -472,7 +475,6 @@ export default {
 	.secBox {
 		background: linear-gradient(180deg, #c1190f 0%, #dd615a 100%);
 		padding: 60px;
-		width: 640px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -488,11 +490,19 @@ export default {
   .secBoxBody {
     margin-top: 100px;
   }
+	.discoverBox,
+	.secBox {
+		width: 100%;
+	}
 	.subTitle {
 		font-size: 24px;
 		font-weight: 700;
 		margin-top: 20px
 	}
+	.mainImg {
+		width: 100%;
+		/* height: 900px; */
+	}	
 }
 
 @media screen and (max-width: 768px) {
