@@ -20,38 +20,38 @@
                 <div>
                     <div class="title">About</div>
                     <div class="list">
-                        <div>Brand Guide</div>
-                        <div>Contact Us</div>
-                        <div>Privacy Policy</div>
+                        <div><a href="https://dimensiondev.github.io/Maskbook-VI/" target="_blank">Brand Guide</a></div>
+                        <div><a href="mailto:info@dimension.im" target="_blank">Contact Us</a></div>
+                        <div><a href="https://legal.mask.io/maskbook/" target="_blank">Privacy Policy</a></div>
                     </div>
                 </div>
                 <div class="bottomNavi">
                     <div class="title">Navigate</div>
                     <div class="naviBox">
                         <div class="list">
-                            <div>News</div>
-                            <div>Help</div>
+                            <div><a href="/news" target="_blank">News</a></div>
+                            <div><a href="/faq" target="_blank">Help</a></div>
                             <div>Join Us</div>
                         </div>
                         <div class="list">
-                            <div>Source Code</div>
+                            <div><a href="https://github.com/DimensionDev" target="_blank">Source Code</a></div>
                             <div>Hackathon</div>
                             <div>Bounty Program</div>
                         </div>
                         <div class="list">
-                            <div>FAQs</div>
-                            <div>Tutorials</div>
+                            <div><a href="/faq" target="_blank">FAQs</a></div>
+                            <div><a href="https://realmaskbook.notion.site/realmaskbook/An-In-Complete-Guide-to-Mask-Network-3ce8000d37a74f9fb449e1d97ea4eddb" target="_blank">Tutorials</a></div>
                         </div>
                     </div>
                 </div>
                 <div class="Community">
                     <div class="title">Community</div>
                     <div class="commun">
-                        <div class="navBox"><img src="../assets/nav-1.webp" style="width: 12px;"></div>
-                        <div class="navBox"><img src="../assets/nav-2.webp" style="width: 21px;"></div>
-                        <div class="navBox"><img src="../assets/nav-3.webp" style="width: 21px;"></div>
-                        <div class="navBox"><img src="../assets/nav-4.webp" style="width: 19px;"></div>
-                        <div class="navBox"><img src="../assets/nav-5.webp" style="width: 18px;"></div>
+                        <div class="navBox"><a href="https://www.facebook.com/masknetwork" target="_blank"><img src="../assets/nav-1.webp" style="width: 12px;"></a></div>
+                        <div class="navBox"><a href="https://twitter.com/realmaskbook" target="_blank"><img src="../assets/nav-2.webp" style="width: 21px;"></a></div>
+                        <div class="navBox"><a href="https://discord.gg/4SVXvj7" target="_blank"><img src="../assets/nav-3.webp" style="width: 21px;"></a></div>
+                        <div class="navBox"><a href="https://t.me/maskbook_group#telegram" target="_blank"><img src="../assets/nav-4.webp" style="width: 19px;"></a></div>
+                        <div class="navBox"><a href="https://github.com/DimensionDev" target="_blank"><img src="../assets/nav-5.webp" style="width: 18px;"></a></div>
                     </div>
                 </div>
 
@@ -141,6 +141,14 @@ export default {
 .list > div + div {
 	margin-top: 40px;
 }
+.list > div a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none !important;
+}
+.list > div a:hover {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none !important;
+}
 .footerSubtext {
 	text-align: center;
 	font-weight: 500;
@@ -225,6 +233,7 @@ export default {
 	height: 48px;
 	background-color: #1c2c4e;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .navBox:hover {
