@@ -22,7 +22,7 @@
             <md-tab id="tab-help" md-label="Help" to="/faq">
               <router-view></router-view>
             </md-tab>
-            <md-tab id="tab-docs" md-label="Docs" to="https://app.gitbook.com/@kan-1/s/mask-network/"></md-tab>
+            <md-tab id="tab-docs" md-label="Docs" href="https://app.gitbook.com/@kan-1/s/mask-network/"></md-tab>
             <md-tab id="tab-about" md-label="About" to="/about">
               <router-view></router-view>
             </md-tab>

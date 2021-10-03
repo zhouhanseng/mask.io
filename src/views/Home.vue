@@ -199,9 +199,9 @@
               </div>
             </div>
           </div>
-          <md-snackbar :md-position="'center'" :md-duration="Infinity" :md-active.sync="showSnackbar" md-persistent>
+          <md-snackbar v-if="acceptCookieEnabled !== 'true'" :md-position="'center'" :md-duration="Infinity" :md-active.sync="showSnackbar" md-persistent>
             <p style="line-height: 24px">We use cookies to enhance your experience, analyze our traffic, and for security and marketing. By visiting our website you agree to our use of cookies.<span style="color: #0F5DE9;">*Read more about cookies*</span></p>
-            <md-button class="md-raised md-primary cookieSubmitButton" @click="showSnackbar = false">I Accept</md-button>
+            <md-button class="md-raised md-primary cookieSubmitButton" @click="enableCookie">I Accept</md-button>
           </md-snackbar>
       </div>
     </div>
@@ -229,6 +229,7 @@ export default {
 			imgSize: 4.25, // 3.8,
 			imgWidth: 500,
 			isPc: true,
+			acceptCookieEnabled: localStorage.getItem('acceptcookieEnabled')
 		};
 	},
 	mounted() {
@@ -265,6 +266,10 @@ export default {
 			this.imgSize = ratio <= 1 ? 1 : ratio > 4.25 ? 4.25 : ratio;
 			this.headImageViewHeight = this.$refs.bgImg.getBoundingClientRect().height;
 		},
+		enableCookie() {
+			localStorage.setItem("acceptCookieEnabled", true)
+			this.showSnackbar = false
+		}
 	},
 };
 </script>
